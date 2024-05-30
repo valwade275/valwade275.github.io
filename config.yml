@@ -2,3 +2,22 @@ Title: Val's Site
 remote_theme: pages-themes/dinky@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# Permalinks
+permalink:        pretty
+
+collections:
+  projects:
+    output: true
+  links:
+    output: true
+  music:
+    output: true
+  stories:
+    output: true
+
+defaults:
+  - scope:
+      path: "/wiki/*"
+    values:
+      layout: "wiki"
