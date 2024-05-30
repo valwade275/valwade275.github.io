@@ -1,0 +1,419 @@
+html{
+    font-family:"Libre Franklin";
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    counter-reset: sidenote-counter;
+}
+
+.tcblack{color: #212121;}
+
+.tomgreen{color: #00ff00}
+
+
+
+.newgreen{
+  color:#02AD28;
+}
+
+.bg-newgreen{
+  background-color:#02AD28;
+}
+
+.b--newgreen{
+  border-color:#02AD28;
+}
+
+.bg-newgreen-light{
+  background-color:#e6f4ea;
+}
+
+.ibmplexmono{
+  font-family:"IBM plex mono";
+}
+
+/*brand:after{
+    display: block;
+    content: '';
+    width: 50px;
+    border-bottom: 8px solid #00ff00;
+    position: absolute;
+    left: 3px;
+    top: 22px;
+    z-index: -1;
+}*/
+
+.mobilemenu{
+    display:none;
+}
+
+.fixedPosition{
+    position: fixed;
+ }
+
+.navigation a{
+    text-decoration: none;
+    color: #212121;
+}
+
+.tombox{
+  position:relative;
+  border:4px solid #00ff00;
+  height:500px;
+  max-width:800px;
+}
+
+.tomboxinner{
+    position:absolute;
+    width:450px;
+    height:600px;
+    left:-470px;
+    top:-54px;
+    z-index:-1;
+}
+.tomboxinner img{
+  height:100%;
+}
+
+.tcsectionheader{
+    font-size:40px;
+    line-height:30px;
+    
+}
+
+.contactbox a{
+text-decoration: none;
+    border: 4px solid #00ff00;
+    padding: 20px;
+    -webkit-transition: padding 100ms;
+    -moz-transition: padding 100ms;
+    -ms-transition: padding 100ms;
+    -o-transition: padding 100ms;
+    transition: padding 100ms;
+}
+
+.contactbox a:hover {
+    padding: 30px;
+}
+
+ul a:hover, ol a:hover, p a:hover {
+    box-shadow: inset 0 -24px 0 rgba(0,255,0,0.4);}
+
+ul a, ol a, p a, form a, .mobilemenu a, .next, .previous, h3 a, h4 a {
+    color: #02AD28;
+    text-decoration:none;
+    font-weight:bold;
+    transition: ease-in .05s border-bottom;
+}
+
+#commentolink{
+  color:black;
+  text-decoration:none;
+  box-shadow:none;
+}
+
+blockquote{
+border-left: 1px solid #02AD28;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+/*
+blockquote {
+    background: #f3f3f3;
+    margin: 0px;
+    padding: 20px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    font-family:"georgia"
+  }
+
+  blockquote:after {
+    visibility: hidden;
+    color: #111;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+*/
+
+.postcontainer{
+    word-wrap:break-word;
+}
+
+.postcontainer h2, .postcontainer h3{
+    padding-top: 2rem;
+    margin-bottom:0px;
+}
+
+.subtitle{
+    padding-top:0px !important;
+}
+
+.postcontainer p, .postcontainer li, .postcontainer blockquote{
+    line-height:1.6em !important;
+    font-size:1.1rem;
+}
+
+.postcontainer li{
+padding:5px;
+}
+
+.postcontainer p img{
+    max-width:100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Sidenote syltes from tufte CSS */
+
+.sidenote, .marginnote { float: right;
+    clear: right;
+    margin-right: -35%;
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    vertical-align: baseline;
+    position: relative; }
+
+.sidenote-number { counter-increment: sidenote-counter; }
+
+.sidenote-number:after, .sidenote:before { position: relative;
+                      vertical-align: baseline; }
+
+.sidenote-number:after { content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem; }
+
+.sidenote:before { content: counter(sidenote-counter) " ";
+font-size: 0.6rem;
+top: -0.5rem;
+color: #03a9f4 }
+
+input.margin-toggle { display: none; }
+
+label.sidenote-number { display: inline; 
+                        color:#03a9f4;
+                        text-decoration:underline;
+                        }
+
+label.margin-toggle:not(.sidenote-number) { display: none; }
+
+#copytext{
+        cursor: pointer;
+}
+
+.tcgrey{
+    background-color: #f3f3f3;
+}
+
+.footnotes{
+    color:grey;
+    font-size:14px;
+}
+
+footer{
+    min-height:300px;
+}
+
+.dottedgreenarrow{
+    border-top:2px dashed #00ff00;
+    margin-top:10px;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.dottedgreenarrow::before{
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #00ff00;
+}
+
+.dottedgreenarrow::after{
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #00ff00;
+}
+
+.wikigreen{
+    border-top:1px solid #00ff00;
+    border-bottom:1px solid #00ff00;
+}
+
+.fontinconsolata{
+    font-family:'Inconsolata';
+    word-wrap:break-word;
+}
+
+/* Menu CSS */
+
+.hamburger{
+    padding:0px 0px;
+}
+
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+    height: 2px;
+    width: 30px;
+}
+
+.hamburger.is-active:hover {
+    opacity: 1;
+}
+
+.slides ul li{
+    list-style:none;
+}
+
+.tommenu{
+    background-color:white;
+    z-index:5;
+    border-left:1px dotted grey;
+    border-bottom:1px dotted grey;
+  }
+  
+  
+  .slides {
+    display:flex;
+    overflow-x: auto;
+    
+    scroll-behavior: smooth;
+    
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slides > div {
+    flex-shrink: 0;
+    background: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right:-5%;
+    margin-left:10%;
+    scroll-snap-align: center;
+  }
+  
+  .slides > div > a{
+    color:black;
+    text-decoration:none;
+  }
+  
+  .slides > div:nth-child(1){
+    border: 2px solid #00ff00;
+  }
+  
+  .slides > div:nth-child(2):before{
+  content: "Latest posts:";
+    margin-top:-50px;
+    display:block;
+    color:white;
+    font-size:20px;
+    margin-bottom:30px;
+    font-weight:bold;
+  }
+  
+  /* .slides > div:not(:first-child){
+    height:90%;
+    margin-top:10%;
+  } */
+  
+  .scrolltext{
+    bottom:66px;
+  }
+
+
+  .rightarrow{
+      background: #f3f3f3;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    box-shadow: 2px 2px 5px #888888;
+    display:inline-block;
+    position:absolute;
+    bottom:50px;
+    right:-25px;
+    z-index:10;
+  }
+  
+  .rightarrow i{
+      color: #000;
+        display: table-cell;
+        vertical-align: middle; 
+        text-align: center; 
+        height: 50px;
+        width: 50px;  
+  }
+
+pre{
+  background-color: black;
+    color: white;
+    overflow: scroll;
+    font-size:12px;
+}
+
+/* search icon */
+
+#searchicon{
+  height:30px;
+  margin-top:-5px;
+  z-index:6;
+}
+
+
+
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:black;
+  }
+
+  
+
+  /* Hack for mobile hypothesis iframe */
+  #hypbox iframe{
+    width:100%;
+    max-width:600px;
+    height:100%;
+  }
+
+  .greendot{
+    height: 10px;
+    width: 10px;
+    background-color: #02AD28;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:7px
+  }
