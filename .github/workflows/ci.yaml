@@ -7,14 +7,25 @@ jobs:
     runs-on: ubuntu-latest
     name: script/cibuild
     steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
-          bundler-cache: true
+          ruby-version: 3.1 # Specify the Ruby version you need
+          bundler-cache: true # Caches the 'vendor/bundle' directory
+
+      - name: Install dependencies
+        run: 
+          gem install bundler
+          bundle install
+
       - name: Set up script permissions
         run: chmod +x script/bootstrap
+
       - name: build
         run: script/bootstrap
+        
       - name: test
         run: script/cibuild
