@@ -17,9 +17,7 @@ jobs:
           bundler-cache: true # Caches the 'vendor/bundle' directory
 
       - name: Install dependencies
-        run: 
-          gem install bundler
-          bundle install
+        run: bundle install
 
       - name: Set up script permissions
         run: chmod +x script/bootstrap
