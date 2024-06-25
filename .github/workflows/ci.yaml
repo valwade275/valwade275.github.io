@@ -2,6 +2,7 @@ on:
   push:
   pull_request:
     types: [opened, synchronize]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,12 +21,14 @@ jobs:
         run: bundle install
 
       - name: Set up script permissions
-        run: chmod +x script/bootstrap
-        run: chmod +x script/cibuild
+        run: |
+          chmod +x script/bootstrap
+          chmod +x script/cibuild
 
-      - name: build
-        run: script/bootstrap
-        run: script/cibuild
+      - name: Build
+        run: |
+          script/bootstrap
+          script/cibuild
 
-      - name: test
+      - name: Test
         run: script/cibuild
