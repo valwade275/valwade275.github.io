@@ -18,7 +18,9 @@ jobs:
           bundler-cache: true # Caches the 'vendor/bundle' directory
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle install
 
       - name: Set up script permissions
         run: |
