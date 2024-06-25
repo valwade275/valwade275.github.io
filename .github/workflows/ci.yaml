@@ -1,0 +1,31 @@
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: script/cibuild
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2 # Specify the Ruby version you need
+          bundler-cache: true # Caches the 'vendor/bundle' directory
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Set up script permissions
+        run: chmod +x script/bootstrap
+        run: chmod +x script/cibuild
+
+      - name: build
+        run: script/bootstrap
+        run: script/cibuild
+
+      - name: test
+        run: script/cibuild
