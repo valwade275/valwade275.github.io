@@ -1,0 +1,20 @@
+Title: Val's GitHub Site
+
+# Permalinks
+permalink:        pretty
+
+collections:
+  projects:
+    output: true
+  links:
+    output: true
+  music:
+    output: true
+  stories:
+    output: true
+
+defaults:
+  - scope:
+      path: "/wiki/*"
+    values:
+      layout: "wiki"
