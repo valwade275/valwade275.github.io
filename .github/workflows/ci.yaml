@@ -45,9 +45,15 @@ jobs:
       - name: Test
         run: script/cibuild --trace  # Append --trace for detailed error information
 
-      - name: Capture error logs
+      - name: Capture build logs
         if: failure()
         run: |
           echo "An error occurred. Capturing logs..."
-          dmesg
-          tail -n 100 /var/log/syslog
+          tail -n 100 _site/logs/jekyll.log  # Capture Jekyll log file if it exists
+          cat _site/logs/jekyll.log
+
+      - name: Capture syslog
+        if: failure()
+        run: |
+          echo "Capturing syslog..."
+          sudo tail -n 100 /var/log/syslog
