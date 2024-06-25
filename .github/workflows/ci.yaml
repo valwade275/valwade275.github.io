@@ -40,7 +40,14 @@ jobs:
       - name: Build
         run: |
           script/bootstrap
-          script/cibuild
+          script/cibuild --trace  # Append --trace for detailed error information
 
       - name: Test
-        run: script/cibuild
+        run: script/cibuild --trace  # Append --trace for detailed error information
+
+      - name: Capture error logs
+        if: failure()
+        run: |
+          echo "An error occurred. Capturing logs..."
+          dmesg
+          tail -n 100 /var/log/syslog
