@@ -16,7 +16,6 @@ jobs:
           uname -a
           ruby -v
           gem -v
-          bundle -v
 
       - name: Install system dependencies
         run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev
@@ -27,8 +26,8 @@ jobs:
           ruby-version: 3.2 # Specify the Ruby version you need
           bundler-cache: true # Caches the 'vendor/bundle' directory
 
-      - name: Add required platform
-        run: bundle lock --add-platform x86_64-linux
+      - name: Install Bundler
+        run: gem install bundler
 
       - name: Install dependencies
         run: bundle install
