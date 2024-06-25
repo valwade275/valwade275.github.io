@@ -37,20 +37,20 @@ jobs:
           chmod +x script/bootstrap
           chmod +x script/cibuild
 
-      - name: Build
+      - name: Build and Test
         run: |
           script/bootstrap
           script/cibuild --trace  # Append --trace for detailed error information
-
-      - name: Test
-        run: script/cibuild --trace  # Append --trace for detailed error information
 
       - name: Capture build logs
         if: failure()
         run: |
           echo "An error occurred. Capturing logs..."
-          tail -n 100 _site/logs/jekyll.log  # Capture Jekyll log file if it exists
-          cat _site/logs/jekyll.log
+          if [ -f "_site/logs/jekyll.log" ]; then
+            tail -n 100 _site/logs/jekyll.log
+          else
+            echo "No Jekyll log file found."
+          fi
 
       - name: Capture syslog
         if: failure()
