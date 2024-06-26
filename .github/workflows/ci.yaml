@@ -1,63 +1,27 @@
+name: Continuous Integration
 on:
   push:
+    branches:
+      - master
   pull_request:
-    types: [opened, synchronize]
-
+    branches:
+      - master
 jobs:
   build:
-    runs-on: ubuntu-latest
-    name: script/cibuild
+    name: "Test with Jekyll ${{ matrix.jekyll }}"
+    runs-on: "ubuntu-latest"
+    strategy:
+      matrix:
+        jekyll: ["~> 3.9", "~> 4.2"]
+    env:
+      JEKYLL_VERSION: ${{ matrix.jekyll }}
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v2
-
-      - name: Print environment details
-        run: |
-          uname -a
-          ruby -v
-          gem -v
-
-      - name: Install system dependencies
-        run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev
-
-      - name: Set up Ruby
+      - name: Set Up Ruby 2.7
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2 # Specify the Ruby version you need
-          bundler-cache: true # Caches the 'vendor/bundle' directory
-
-      - name: Install Bundler
-        run: gem install bundler
-
-      - name: Install dependencies
-        run: bundle install
-
-      - name: Set up script permissions
-        run: |
-          chmod +x script/bootstrap
-          chmod +x script/cibuild 
-
-      - name: Build and Test
-        run: |
-          script/bootstrap
-          script/cibuild --trace  # Append --trace for detailed error information 
-
-      - name: Capture build logs
-        if: failure()
-        run: |
-          echo "An error occurred. Capturing logs..."
-          if [ -f "_site/logs/jekyll.log" ]; then
-            tail -n 100 _site/logs/jekyll.log
-          else
-            echo "No Jekyll log file found."
-          fi
-
-      - name: Capture syslog
-        if: failure()
-        run: |
-          echo "Capturing syslog..."
-          sudo tail -n 100 /var/log/syslog
-
-      - name: Finalize
-        run: echo "Build process completed successfully."
-
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Run tests
+        run: script/cibuild
