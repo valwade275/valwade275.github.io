@@ -4,7 +4,8 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "github-pages", group: :jekyll_plugins
+gem 'github-pages', '>= 231', group: :jekyll_plugins
+gem 'minima', '~> 2.5'
 
 # gem 'bundler', '~> 2.5.0'  # Update the constraint here
 # gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
