@@ -6,6 +6,7 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
   build:
     name: "Test with Jekyll ${{ matrix.jekyll }}"
@@ -16,20 +17,19 @@ jobs:
 
     env:
       JEKYLL_VERSION: ${{ matrix.jekyll }}
-    jobs: 
-      build:
-        steps:
-        - name: Checkout Repository
-          uses: actions/checkout@v2
 
-        - name: Set Up Ruby 2.7
-          uses: ruby/setup-ruby@v1
-          with:
-            ruby-version: 2.7.8 
-            bundler-cache: true
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-      name: Install Bundler
-      run: gem install bundler@>=2.7.8  # Update the version here
+      - name: Set Up Ruby 2.7
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.8 
+          bundler-cache: true
+
+      - name: Install Bundler
+        run: gem install bundler@>=2.7.8  # Update the version here
 
       - name: Run tests
         run: script/cibuild
