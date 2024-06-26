@@ -88,3 +88,5 @@ DEPENDENCIES
 
 BUNDLED WITH
    2.5.14
+
+gem install bundler -v 2.5.14
