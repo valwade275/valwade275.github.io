@@ -40,7 +40,7 @@ jobs:
       - name: Build and Test
         run: |
           script/bootstrap
-          script/cibuild --trace  # Append --trace for detailed error information || exit 0
+          script/cibuild --trace  # Append --trace for detailed error information 
 
       - name: Capture build logs
         if: failure()
