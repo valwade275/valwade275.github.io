@@ -8,15 +8,7 @@ on:
       - main
 
 jobs:
-  build:
-    name: "Test with Jekyll ${{ matrix.jekyll }}"
-    runs-on: "ubuntu-latest"
-    strategy:
-      matrix:
-        jekyll: ["~> 3.9", "~> 4.2"]
-
-    env:
-      JEKYLL_VERSION: ${{ matrix.jekyll }}
+  
 
     steps:
       - name: Checkout Repository

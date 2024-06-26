@@ -5,8 +5,10 @@ source "https://rubygems.org"
 gemspec
 
 gem 'github-pages', '>= 231', group: :jekyll_plugins
-gem 'minima', '~> 2.5'
+
 
 # gem 'bundler', '~> 2.5.0'  # Update the constraint here
 # gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 # gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
+
+gem "webrick", "~> 1.8"
