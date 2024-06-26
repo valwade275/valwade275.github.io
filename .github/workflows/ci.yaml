@@ -16,16 +16,17 @@ jobs:
 
     env:
       JEKYLL_VERSION: ${{ matrix.jekyll }}
+    jobs: 
+      build:
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Set Up Ruby 2.7
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7.8 
-          bundler-cache: true
+        - name: Set Up Ruby 2.7
+          uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: 2.7.8 
+            bundler-cache: true
 
       name: Install Bundler
       run: gem install bundler@>=2.7.8  # Update the version here
