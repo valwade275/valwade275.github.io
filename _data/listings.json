@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "name": "fashion-history",
+      "path": "/fashion-history",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/fashion-history/links.md"
+          }
+        ],
+        "path": "/fashion-history"
+      }
+    },
+    {
+      "name": "technical-writing",
+      "path": "/technical-writing",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/technical-writing/links.md"
+          }
+        ],
+        "path": "/technical-writing"
+      }
+    }
+  ],
+  "files": [
+    {
+      "name": "index.html",
+      "path": "/index.html"
+    }
+  ],
+  "path": ""
+}

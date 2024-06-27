@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Val's Wiki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wiki Topics</h1>
+  <div id="path">Path: {{ page.path }}</div>
+  <ul id="listing">
+    {% for folder in page.listings.folders %}
+      <li><a href="{{ folder.path }}">{{ folder.name }}/</a></li>
+    {% endfor %}
+    {% for file in page.listings.files %}
+      <li><a href="{{ file.path }}">{{ file.name }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
