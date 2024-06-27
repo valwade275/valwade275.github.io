@@ -1,10 +1,3 @@
----
-layout: listings
-title: Val's Wiki
-path: /
-listings: {{ site.data.listings }}
----
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,31 +6,117 @@ listings: {{ site.data.listings }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Val's Wiki</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
     ul {
       list-style-type: none;
     }
-    li {
-      margin: 5px 0;
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #301934;
+    }
+    header {
+      background: #301934;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    main h2, main h3 {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #301934;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    a {
+      color: #301934;
+    }
+    a:hover {
+      color: #555;
     }
   </style>
 </head>
 
 <body>
-  <h2 class="tc">Welcome to Val's Wiki</h2>
-  <p>This is my personal digital garden. Feel free to wander. You'll find a collection of ideas and fragments of topics that interest me.</p>
-  <h1>Wiki Topics</h1>
-  <div id="path">Path: {{ page.path }}</div>
-  <ul id="listing">
-    {% for folder in site.data.listings.folders %}
-      <li><a href="{{ folder.path }}">{{ folder.name }}/</a></li>
-    {% endfor %}
-    {% for file in site.data.listings.files %}
-      <li><a href="{{ file.path }}">{{ file.name }}</a></li>
-    {% endfor %}
-  </ul>
+  <header>
+    <h1>Val's Wiki</h1>
+  </header>
+  <main>
+    <h2 class="tc">Welcome!</h2>
+    <p>This is my wiki and personal <a href="https://maggieappleton.com/garden-history">digital garden</a>. Feel free to wander. You'll find a collection of ideas and fragments of topics that interest me.</p>
+    <h3>Wiki Topics</h3>
+
+    <ul id="folders-list"></ul>
+    <ul id="files-list"></ul>
+  
+    <script>
+      // Fetch the JSON file
+      fetch('/_data/listings.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Validate JSON structure
+          if (!data.folders || !data.files) {
+            throw new Error('JSON data structure is invalid');
+          }
+    
+          // Process folders
+          const foldersList = document.getElementById('folders-list');
+          data.folders.forEach(folder => {
+            if (!folder.path || !folder.name) {
+              console.error('Error: Folder object missing properties', folder);
+              return; // Skip processing this folder
+            }
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = folder.path;
+            a.textContent = folder.name;
+            li.appendChild(a);
+            foldersList.appendChild(li);
+          });
+    
+          // Process files
+          const filesList = document.getElementById('files-list');
+          data.files.forEach(file => {
+            if (!file.path || !file.name) {
+              console.error('Error: File object missing properties', file);
+              return; // Skip processing this file
+            }
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = file.path;
+            a.textContent = file.name;
+            li.appendChild(a);
+            filesList.appendChild(li);
+          });
+        })
+        .catch(error => console.error('Error fetching or parsing data:', error));
+    </script>
+    
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>

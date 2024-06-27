@@ -4,6 +4,21 @@ author:
   name: Valerie Wade
   email: valwade275@gmail.com
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: "/:title/"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      index: "index.html"
+
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
