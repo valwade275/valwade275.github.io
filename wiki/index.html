@@ -1,5 +1,6 @@
 ---
 layout: listings
+title: Val's Wiki
 path: /
 listings: {{ site.data.listings }}
 ---
@@ -11,11 +12,32 @@ listings: {{ site.data.listings }}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Val's Wiki</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 
 <body>
   <h2 class="tc">Welcome to Val's Wiki</h2>
   <p>This is my personal digital garden. Feel free to wander. You'll find a collection of ideas and fragments of topics that interest me.</p>
+  <h1>Wiki Topics</h1>
+  <div id="path">Path: {{ page.path }}</div>
+  <ul id="listing">
+    {% for folder in site.data.listings.folders %}
+      <li><a href="{{ folder.path }}">{{ folder.name }}/</a></li>
+    {% endfor %}
+    {% for file in site.data.listings.files %}
+      <li><a href="{{ file.path }}">{{ file.name }}</a></li>
+    {% endfor %}
+  </ul>
 </body>
 
 </html>
