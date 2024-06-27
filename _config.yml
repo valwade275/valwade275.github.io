@@ -1,4 +1,5 @@
-title: Val's GitHub Site
+---
+title: "Val's GitHub Site"
 author:
   name: Valerie Wade
   email: valwade275@gmail.com
@@ -10,14 +11,17 @@ description: >
 
 # Build settings
 
-# If you clone the Minima repo and build locally, use this setting.
-theme: minima
+repository: valwade275/valwade275.github.io
+
 remote_theme: jekyll/minima
 
 # As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
 # If you want to use the latest Minima version on GitHub Pages, use the following setting and 
 # add a line comment on "theme: minima" above.
 #remote_theme: jekyll/minima
+
+# If you clone the Minima repo and build locally, use this setting.
+# theme: minima
 
 plugins:
   - jekyll-feed
@@ -57,7 +61,7 @@ skin: classic
   #  - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-    - { platform: github,         user_url: "https://github.com/valwade275" }
+  #  - { platform: github,         user_url: "https://github.com/valwade275" }
   #  - { platform: gitlab,         user_url: "https://gitlab.com/jekyll" }
   #  - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
   #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
