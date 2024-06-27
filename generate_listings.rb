@@ -15,12 +15,14 @@ def generate_listings(dir, base_path = '')
     item_path = File.join(dir, item)
     relative_path = File.join(base_path, item)
     if File.directory?(item_path)
-      listings[:folders] << {
+      folder = {
         name: item,
-        path: relative_path
+        path: relative_path,
+        folders: [],  # Add an empty folders array
+        files: []     # Add an empty files array
       }
-      # Recursively generate listings for subfolders
-      listings[:folders].last[:listings] = generate_listings(item_path, relative_path)
+      folder[:listings] = generate_listings(item_path, relative_path)  # Recursively generate listings for subfolders
+      listings[:folders] << folder
     else
       listings[:files] << {
         name: item,
