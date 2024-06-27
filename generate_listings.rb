@@ -1,7 +1,12 @@
 require 'json'
 require 'fileutils'
-require 'yaml'
+require 'yaml'  # Add this line to include the YAML module
 
+# Load Jekyll configuration to get the directory to list
+config = YAML.load_file('_config.yml')
+directory_to_list = config['directory_to_list']
+
+# Function to generate listings recursively
 def generate_listings(dir, base_path = '')
   listings = {
     folders: [],
@@ -10,19 +15,19 @@ def generate_listings(dir, base_path = '')
   }
 
   Dir.foreach(dir) do |item|
-    next if item == '.' or item == '..'
+    next if item == '.' || item == '..'
 
     item_path = File.join(dir, item)
     relative_path = File.join(base_path, item)
+
     if File.directory?(item_path)
-      folder = {
+      # Recursively generate listings for subfolders
+      sub_listings = generate_listings(item_path, relative_path)
+      listings[:folders] << {
         name: item,
         path: relative_path,
-        folders: [],  # Add an empty folders array
-        files: []     # Add an empty files array
+        listings: sub_listings
       }
-      folder[:listings] = generate_listings(item_path, relative_path)  # Recursively generate listings for subfolders
-      listings[:folders] << folder
     else
       listings[:files] << {
         name: item,
@@ -34,16 +39,14 @@ def generate_listings(dir, base_path = '')
   listings
 end
 
-# Load configuration
-config = YAML.load_file('_config.yml')
-directory_to_list = config['directory_to_list']
-
 # Ensure the _data directory exists
 data_dir = '_data'
 FileUtils.mkdir_p(data_dir)
 
 # Generate listings for the specified directory
 output = generate_listings(directory_to_list)
+
+# Write output to listings.json using Liquid
 File.open(File.join(data_dir, 'listings.json'), 'w') do |f|
   f.write(JSON.pretty_generate(output))
 end

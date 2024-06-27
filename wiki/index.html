@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,57 +64,17 @@
     <p>This is my wiki and personal <a href="https://maggieappleton.com/garden-history">digital garden</a>. Feel free to wander. You'll find a collection of ideas and fragments of topics that interest me.</p>
     <h3>Wiki Topics</h3>
 
-    <ul id="folders-list"></ul>
-    <ul id="files-list"></ul>
-  
-    <script>
-      // Fetch the JSON file
-      fetch('/_data/listings.json')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.json();
-        })
-        .then(data => {
-          // Validate JSON structure
-          if (!data.folders || !data.files) {
-            throw new Error('JSON data structure is invalid');
-          }
+    <ul id="folders-list">
+      {% for folder in site.data.listings.folders %}
+        <li><a href="{{ folder.path }}">{{ folder.name }}</a></li>
+      {% endfor %}
+    </ul>
     
-          // Process folders
-          const foldersList = document.getElementById('folders-list');
-          data.folders.forEach(folder => {
-            if (!folder.path || !folder.name) {
-              console.error('Error: Folder object missing properties', folder);
-              return; // Skip processing this folder
-            }
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = folder.path;
-            a.textContent = folder.name;
-            li.appendChild(a);
-            foldersList.appendChild(li);
-          });
-    
-          // Process files
-          const filesList = document.getElementById('files-list');
-          data.files.forEach(file => {
-            if (!file.path || !file.name) {
-              console.error('Error: File object missing properties', file);
-              return; // Skip processing this file
-            }
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = file.path;
-            a.textContent = file.name;
-            li.appendChild(a);
-            filesList.appendChild(li);
-          });
-        })
-        .catch(error => console.error('Error fetching or parsing data:', error));
-    </script>
-    
+    <ul id="files-list">
+      {% for file in site.data.listings.files %}
+        <li><a href="{{ file.path }}">{{ file.name }}</a></li>
+      {% endfor %}
+    </ul>
   </main>
   
   <footer>
