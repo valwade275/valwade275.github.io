@@ -9,6 +9,10 @@
         ],
         "files": [
           {
+            "name": "index.html",
+            "path": "/fashion-history/index.html"
+          },
+          {
             "name": "links.md",
             "path": "/fashion-history/links.md"
           }
@@ -25,6 +29,10 @@
         ],
         "files": [
           {
+            "name": "index.html",
+            "path": "/technical-writing/index.html"
+          },
+          {
             "name": "links.md",
             "path": "/technical-writing/links.md"
           }
@@ -40,6 +48,10 @@
 
         ],
         "files": [
+          {
+            "name": "index.html",
+            "path": "/texas-history/index.html"
+          },
           {
             "name": "links.md",
             "path": "/texas-history/links.md"

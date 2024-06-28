@@ -1,0 +1,10 @@
+{
+    "name": "my-wiki",
+    "version": "1.0.0",
+    "scripts": {
+      "update-listings": "python update_listings.py",
+      "build": "npm run update-listings && bundle exec jekyll build",
+      "serve": "npm run update-listings && bundle exec jekyll serve"
+    }
+  }
+  

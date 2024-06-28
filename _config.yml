@@ -1,10 +1,17 @@
 ---
+# Site Settings
 title: "Valerie's GitHub Site"
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  Valerie's GitHub Home Page
 author:
   name: Valerie Wade
   email: valwade275@gmail.com
 
 # See the alternative config.yml file for other options for permalinks & defaults.
+
+permalink: pretty
 
 defaults:
   -
@@ -21,10 +28,7 @@ defaults:
     values:
       index: "index.html"
 
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Valerie's GitHub Home Page
+
 
 # Build settings
 
@@ -57,7 +61,7 @@ header_pages:
   - wiki/index.html
 
 # Set to `true` to show excerpts on the homepage.
-#show_excerpts: false
+# show_excerpts: false
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
@@ -71,6 +75,10 @@ minima:
   # solarized	         Adaptive skin for solarized color scheme skins.
 skin: classic
   
+# Liquid options
+liquid:
+  error_mode: warn
+
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
