@@ -14,21 +14,31 @@ author:
 permalink: pretty
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
-      permalink: "/title/"
-  -
-    scope:
-      path: ""
-      type: "pages"
+  - scope:
+      path: "wiki"
+      type: "wiki"
     values:
-      index: "index.html"
+      layout: "wiki"
 
 
+# Collections
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:path/
+
+# Directory structure
+source: .
+destination: ./_site
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+collections_dir: .
 
 # Build settings
 
@@ -78,6 +88,22 @@ skin: classic
 # Liquid options
 liquid:
   error_mode: warn
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Include additional files or directories
+include:
+  - _pages
+  - _data
+
+
+
 
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 

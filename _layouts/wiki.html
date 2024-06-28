@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <style>
+    /* Include your CSS styles here */
+    ul {
+      list-style-type: none;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #301934;
+    }
+    header {
+      background: #301934;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    main h2, main h3 {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #301934;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    a {
+      color: #301934;
+    }
+    a:hover {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Val's Wiki</h1>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
