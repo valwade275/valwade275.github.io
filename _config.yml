@@ -11,7 +11,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      permalink: "/:title/"
+      permalink: "/title/"
   -
     scope:
       path: ""
@@ -44,6 +44,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-include-cache
 
 # Theme-specific settings
 

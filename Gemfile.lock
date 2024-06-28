@@ -270,8 +270,10 @@ PLATFORMS
 DEPENDENCIES
   bundler
   csv
+  faraday (~> 2.7, >= 2.7.11)
   github-pages (>= 231)
   jekyll (~> 3.9)
+  jekyll-include-cache
   jekyll-remote-theme
   minima!
   webrick (~> 1.8)
