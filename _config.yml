@@ -1,8 +1,10 @@
 ---
-title: "My GitHub Site"
+title: "Valerie's GitHub Site"
 author:
   name: Valerie Wade
   email: valwade275@gmail.com
+
+# See the alternative config.yml file for other options for permalinks & defaults.
 
 defaults:
   -
