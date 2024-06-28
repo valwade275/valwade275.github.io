@@ -1,5 +1,5 @@
 ---
-title: "Val's GitHub Site"
+title: "My GitHub Site"
 author:
   name: Valerie Wade
   email: valwade275@gmail.com
@@ -30,7 +30,7 @@ repository: valwade275/valwade275.github.io
 
 directory_to_list: C:/Users/valer/valwade275.github.io/wiki
 
-remote_theme: jekyll/minima
+theme: minima
 
 # As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
 # If you want to use the latest Minima version on GitHub Pages, use the following setting and 
@@ -43,6 +43,7 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Theme-specific settings
 
