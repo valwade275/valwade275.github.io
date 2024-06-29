@@ -49,6 +49,10 @@
         ],
         "files": [
           {
+            "name": "historic-downtowns.md",
+            "path": "/texas-history/historic-downtowns.md"
+          },
+          {
             "name": "index.html",
             "path": "/texas-history/index.html"
           },
