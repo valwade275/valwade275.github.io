@@ -28,3 +28,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
+        # Ensure the branch is set correctly
+        publish_branch: gh-pages
