@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #301934;
+    }
+    header {
+        background: #301934;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;<div class="fontinconsolata w-80-l w-90 center f4">
+
+  <div class="pt2 pb2 wikigreen f3-l f4 mt4 mb4 center">
+  <div class="tc">My Digital Garden</div>
+  </div>}
+    main {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 2rem auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    main h2 {
+        text-align: center;
+    }
+    main h3 {
+        text-align: center;
+    }
+    footer {
+        text-align: center;
+        padding: 1rem 0;
+        background: #301934;
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    a {
+        color: #301934;
+    }
+    a:hover {
+        color: #555;
+    }
+</style>
+
+</head>
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Valerie’s GitHub Site | Valerie’s GitHub Home Page</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Valerie’s GitHub Site" />
+<meta name="author" content="Valerie Wade" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Valerie’s GitHub Home Page" />
+<meta property="og:description" content="Valerie’s GitHub Home Page" />
+<meta property="og:site_name" content="Valerie’s GitHub Site" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Valerie’s GitHub Site" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Valerie Wade"},"description":"Valerie’s GitHub Home Page","headline":"Valerie’s GitHub Site","url":"/README%20MINIMA/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!--<link rel="stylesheet" href="/assets/css/style.css?v=d0b7462ad48274f5aea08f0b3f4761e702829e05">
+    <script src="/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!--<h1 class="header">Valerie's GitHub Site</h1>
+        <p class="header">Valerie's GitHub Home Page
+</p>-->
+
+        <ul>
+          
+          <!--<li><a class="buttons github" href="https://github.com/valwade275/valwade275.github.io">View On GitHub</a></li>-->
+        </ul>
+
+        <!--
+          <p class="header">This project is maintained by <a class="header name" href="https://github.com/valwade275">valwade275</a></p>
+        -->
+
+        
+      </header>
+
+      <section>
+        <div align="center">
+  <p><em><strong>Disclaimer:</strong> The information here may vary depending on the version you're using.<br />
+  Please refer to the <code>README.md</code> bundled within the theme-gem for information specific to your version or by pointing
+  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md.<br />
+  Running <code>bundle show minima</code> will provide you with the local path to your current theme version.</em></p>
+  <img src="/readme_banner.svg" />
+  <p>It's Jekyll's default (and first) theme. It's what you get when you run <code>jekyll new</code>.</p>
+  <p><a href="https://jekyll.github.io/minima/">Theme preview</a></p>
+  <p><img src="/screenshot.png" /></p>
+</div>
+
+<h2 id="installation">Installation</h2>
+
+<p>Add this line to your Jekyll site’s Gemfile:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gem</span> <span class="s2">"minima"</span>
+</code></pre></div></div>
+
+<p>And then execute:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle
+</code></pre></div></div>
+
+<h2 id="contents-at-a-glance">Contents At-A-Glance</h2>
+
+<p>Minima has been scaffolded by the <code class="language-plaintext highlighter-rouge">jekyll new-theme</code> command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.</p>
+
+<h3 id="layouts">Layouts</h3>
+
+<p>Refers to files within the <code class="language-plaintext highlighter-rouge">_layouts</code> directory, that define the markup for your theme.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">base.html</code> — The base layout that lays the foundation for subsequent layouts. The derived layouts inject their
+contents into this file at the line that says ` &lt;h2 id="head"&gt;HEAD&lt;/h2&gt;</li>
+</ul>
+
+<h3 id="documentation">Documentation</h3>
+
+<ul>
+  <li>Forward port v2.5.1 release (#399)</li>
+  <li>Docs: remove Google+ (#373)</li>
+  <li>Update README section on adding favicons to site (#438)</li>
+  <li>Fix custom-styles.scss name in README (#610)</li>
+  <li>Improve the msg to enable disqus in README (#627)</li>
+  <li>Make docs consistent with code (#657)</li>
+  <li>Highlight that the base branch is v3 (#719)</li>
+  <li>Improve documentation for config options (#760)</li>
+  <li>Add platform X supporting in README (#780)</li>
+</ul>
+
+<h3 id="minor-enhancements">Minor Enhancements</h3>
+
+<ul>
+  <li>Add Keybase to social links (#400)</li>
+  <li>Solarized skins (#404)</li>
+  <li>Add a placeholder of favicons (#433)</li>
+  <li>fix: make page.list_title optional (#303)</li>
+  <li>Add stackoverflow to social media list (#443)</li>
+  <li>Add social support for dev.to (#410)</li>
+  <li>Add GitLab to social (#352)</li>
+  <li>Support mutiple authors on post layout (#348)</li>
+  <li>Re-implement site footer markup and styles (#448)</li>
+  <li>Support pagination through posts in home layout (#450)</li>
+  <li>Show the last modified date of posts (#432)</li>
+  <li>Set margins of hr to improve readability (#461)</li>
+  <li>Export a variable to let users to custom the font family of code (#462)</li>
+  <li>Set margin-bottom of pagination (#458)</li>
+  <li>Adjust margins of headings to make sections clear (#467)</li>
+  <li>Rename favicons.html to custom-head.html (#468)</li>
+  <li>Remove RSS icon from the social media list (#470)</li>
+  <li>Improve the readablility of blockquotes (#481)</li>
+  <li>Extract more color rules into skins (#452)</li>
+  <li>Introduce "Dark Minima" skin (#335)</li>
+  <li>Reduce spacing in the three largest headers (#538)</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">auto</code> skin which honors the <code class="language-plaintext highlighter-rouge">prefers-color-scheme</code> media query (#634)</li>
+  <li>Add google scholar. (#673)</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">x</code> social icon (#756)</li>
+  <li>Add Codeberg icon and update list of supported social links (#788)</li>
+  <li>Added whatsapp social icon. (#781)</li>
+  <li>Update GitLab icon (#765)</li>
+</ul>
+
+<h3 id="major-enhancements">Major Enhancements</h3>
+
+<ul>
+  <li>Allow skins to be defined and customized easily (#336)</li>
+  <li>Drop support for scalar 'author' configuration (#384)</li>
+  <li>Place skins in <code class="language-plaintext highlighter-rouge">minima/skins</code> to clarify purpose (#479)</li>
+  <li>Add adaptive skin: <code class="language-plaintext highlighter-rouge">solarized</code> (#594)</li>
+  <li>Generate social iconsheet during build (#686)</li>
+  <li>Rename <code class="language-plaintext highlighter-rouge">default</code> layout to <code class="language-plaintext highlighter-rouge">base</code> (#690)</li>
+</ul>
+
+<h3 id="bug-fixes">Bug Fixes</h3>
+
+<ul>
+  <li>Add missing rel=me attributes to social links (#386)</li>
+  <li>Set the border radius of highlight (#426)</li>
+  <li>Removed unnecessary whitespace-controls (#390)</li>
+  <li>fix: overflow auto for tables (#296)</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">overflow-wrap: break-word</code> to body tag (#321)</li>
+  <li>Use "rem" unit in relative-font-size mixin (#436)</li>
+  <li>Assign static value to variable outside forloop (#437)</li>
+  <li>Add font-size styles for elements h5 and h6 (#441)</li>
+  <li>Stop prefixing CSS calc with <code class="language-plaintext highlighter-rouge">-webkit-</code> (#445)</li>
+  <li>Improve readability of post titles with diacritics (#449)</li>
+  <li>Fix a bug of incorrect parsing of page.modified_date (#455)</li>
+  <li>Specify the font size of the root element (#485)</li>
+  <li>Fix script used for Google Analytics (#596)</li>
+  <li>Open social links in new tabs (#625)</li>
+  <li>change base-font-family sequence (#654)</li>
+  <li>Fix responsiveness of social SVG sprites (#677)</li>
+  <li>Improve "Subscribe" link in footer (#698)</li>
+  <li>Fix deprecation warnings from Dart Sass (#700)</li>
+  <li>Fix reference to base layout in <code class="language-plaintext highlighter-rouge">404.html</code> (#713)</li>
+  <li>Minimal fixes for Disqus (#775)</li>
+</ul>
+
+<h3 id="development-fixes">Development Fixes</h3>
+
+<ul>
+  <li>Ignore .jekyll-cache (#439)</li>
+  <li>Clean up and optimize .gitignore (#475)</li>
+  <li>[chore] Normalize Travis CI builds (#480)</li>
+  <li>chore(deps): bump Ruby version (#510)</li>
+  <li>Conditionally load GFM-parser gem in CI builds (#535)</li>
+  <li>Improve CI workflow configuration (#609)</li>
+  <li>Migrate from TravisCI to GitHub Actions (#633)</li>
+  <li>Build and deploy demo site via GH Action workflow (#636)</li>
+  <li>Improve readability of config file (#703)</li>
+  <li>Trigger demo-site build manually (#714)</li>
+</ul>
+
+<h2 id="251">2.5.1</h2>
+
+<h3 id="minor-enhancements-1">Minor Enhancements</h3>
+
+<ul>
+  <li>Allow use and testing with Jekyll 4.x (#398)</li>
+</ul>
+
+<h3 id="bug-fixes-1">Bug Fixes</h3>
+
+<ul>
+  <li>Footer overlapping issue (Support Microsoft Explorer 11) (#248)</li>
+  <li>Update multiline config comment. (#346)</li>
+</ul>
+
+<h3 id="development-fixes-1">Development Fixes</h3>
+
+<ul>
+  <li>remove deprecated <code class="language-plaintext highlighter-rouge">sudo: false</code> in .travis.yml (#347)</li>
+</ul>
+
+<h2 id="250">2.5.0</h2>
+
+<h3 id="bug-fixes-2">Bug Fixes</h3>
+
+<ul>
+  <li>Add <code class="language-plaintext highlighter-rouge">jekyll-feed</code> plugin in config (#228)</li>
+</ul>
+
+<h3 id="minor-enhancements-2">Minor Enhancements</h3>
+
+<ul>
+  <li>Stick footer for short posts (#223)</li>
+  <li>Consolidate trigger SVG paths (#148)</li>
+</ul>
+
+<h2 id="241">2.4.1</h2>
+
+<h3 id="bug-fixes-3">Bug Fixes</h3>
+
+<ul>
+  <li>Reintroduce removed social includes for backwards compatibility (#217)</li>
+</ul>
+
+<h2 id="240">2.4.0</h2>
+
+<h3 id="minor-enhancements-3">Minor Enhancements</h3>
+
+<ul>
+  <li>Add better system fonts (#205)</li>
+  <li>Remove whitespace due to Liquid tags in generated HTML (#202)</li>
+  <li>Adding Mastodon to the social networks (#198)</li>
+</ul>
+
+<h3 id="bug-fixes-4">Bug Fixes</h3>
+
+<ul>
+  <li>social icons should resolve baseurl properly (#201)</li>
+  <li>fix: styling main element in IE 11 (#199)</li>
+</ul>
+
+<h3 id="documentation-1">Documentation</h3>
+
+<ul>
+  <li>Improve thw wording in index.md (#175)</li>
+  <li>Update config description comment (#203)</li>
+</ul>
+
+<h2 id="230">2.3.0</h2>
+
+<ul>
+  <li>Add option to show excerpts on the homepage (#90)</li>
+  <li>Handle RSS feed with jekyll-feed (#183)</li>
+  <li>Test build with Ruby 2.4 on CI (#184)</li>
+  <li>Document how to customize navigation links (#192)</li>
+</ul>
+
+<h2 id="221">2.2.1</h2>
+
+<ul>
+  <li>Revert social_sites hash for retrocompatibility (#190)</li>
+</ul>
+
+<h2 id="220">2.2.0</h2>
+
+<h3 id="minor-enhancements-4">Minor Enhancements</h3>
+
+<ul>
+  <li>handling content outside of posts (#88)</li>
+  <li>Add default table styles (#144)</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code> dependency (#139)</li>
+  <li>Add Microformats markup (#160)</li>
+  <li>Add more social links (#141)</li>
+</ul>
+
+<h3 id="documentation-2">Documentation</h3>
+
+<ul>
+  <li>Docs: clarification about page title (#142)</li>
+</ul>
+
+<h2 id="211--2017-04-13">2.1.1 / 2017-04-13</h2>
+
+<h3 id="minor-enhancements-5">Minor Enhancements</h3>
+
+<ul>
+  <li>Close #55: Improve mobile user experience (#62)</li>
+  <li>Remove incomplete status from spec summary (#63)</li>
+  <li>Use date_format if set in configuration (#70)</li>
+  <li>Corrected misspelled word (#72)</li>
+  <li>Scale headings relative to base-font-size (#78)</li>
+  <li>Remove 2.0 post-install message (#82)</li>
+  <li>Fixes #115 - Only include the nav tag if there are pages to be displayed in the menu (#116)</li>
+  <li>Fixes #80, #106. Make the hamburger work with pure CSS. (#111)</li>
+  <li>add <code class="language-plaintext highlighter-rouge">header_pages</code> config to link only specific files in header (#52)</li>
+  <li>More easily customizable CSS (#117)</li>
+  <li>Use relative size for fonts and line-height (#103)</li>
+  <li>Add 404 page from jekyll <code class="language-plaintext highlighter-rouge">master</code> (#121)</li>
+</ul>
+
+<h3 id="development-fixes-2">Development Fixes</h3>
+
+<ul>
+  <li>Remove duplicate .sass-cache  (#71)</li>
+  <li>Demo minima on GitHub Pages (#76)</li>
+  <li>Remove the Rakefile (#118)</li>
+</ul>
+
+<h3 id="documentation-3">Documentation</h3>
+
+<ul>
+  <li>Update README with theme content description (#91)</li>
+  <li>Update default local URL (#120)</li>
+</ul>
+
+<h2 id="210--2016-11-15">2.1.0 / 2016-11-15</h2>
+
+<h3 id="minor-enhancements-6">Minor Enhancements</h3>
+
+<ul>
+  <li>Update gemspec to require at least Jekyll 3.3 (#59)</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">absolute_url</code> filter for disqus (#66)</li>
+  <li>replace <code class="language-plaintext highlighter-rouge">example/index.html</code> with <code class="language-plaintext highlighter-rouge">example/index.md</code> (#58)</li>
+</ul>
+
+<h3 id="development-fixes-3">Development Fixes</h3>
+
+<ul>
+  <li>Example should require Jekyll 3.3 (#61)</li>
+</ul>
+
+<h2 id="200--2016-10-06">2.0.0 / 2016-10-06</h2>
+
+<h3 id="minor-enhancements-7">Minor Enhancements</h3>
+
+<ul>
+  <li>priority to site.url when site.github.url is available (#46)</li>
+  <li>Move contents of the index.html page to the ‘home’ layout (#48)</li>
+  <li>Use  new <code class="language-plaintext highlighter-rouge">absolute_url</code> and <code class="language-plaintext highlighter-rouge">relative_url</code> filters in minima (#57)</li>
+</ul>
+
+<h3 id="development-fixes-4">Development Fixes</h3>
+
+<ul>
+  <li>Use standardized tab size of 2 spaces (#44)</li>
+</ul>
+
+<h3 id="major-enhancements-1">Major Enhancements</h3>
+
+<ul>
+  <li>move <code class="language-plaintext highlighter-rouge">css/</code> directory from jekyll into <code class="language-plaintext highlighter-rouge">assets/</code> (#43)</li>
+</ul>
+
+<h3 id="bug-fixes-5">Bug Fixes</h3>
+
+<ul>
+  <li>Fix html proofer errors (#49)</li>
+  <li>Update gem regex to include new <code class="language-plaintext highlighter-rouge">assets</code> directory (#54)</li>
+</ul>
+
+<h2 id="120--2016-09-12">1.2.0 / 2016-09-12</h2>
+
+<h3 id="minor-enhancements-8">Minor Enhancements</h3>
+
+<ul>
+  <li>Look to site.url when available (#35)</li>
+</ul>
+
+<h3 id="documentation-4">Documentation</h3>
+
+<ul>
+  <li>Move instruction for CSS in install section (#37)</li>
+</ul>
+
+<h2 id="110--2016-09-07">1.1.0 / 2016-09-07</h2>
+
+<h3 id="major-enhancements-2">Major Enhancements</h3>
+
+<ul>
+  <li>Add support to Disqus (#21)</li>
+  <li>Google analytics support (#26)</li>
+  <li>Look for <code class="language-plaintext highlighter-rouge">site.github.url</code> if it exists (#25)</li>
+</ul>
+
+<h3 id="minor-enhancements-9">Minor Enhancements</h3>
+
+<ul>
+  <li>Fixed Flash Of Unstyled SVG (#12)</li>
+  <li>Added “author” in footer instead of double title (#22)</li>
+</ul>
+
+<h3 id="documentation-5">Documentation</h3>
+
+<ul>
+  <li>Document how to link to the theme styles (#18)</li>
+  <li>Update Example to resemble Default site (#24)</li>
+</ul>
+
+<h3 id="development-enhancements">Development Enhancements</h3>
+
+<ul>
+  <li>Use upstream gemspec file matcher (#9)</li>
+  <li>Fix gemspec regex (#31)</li>
+  <li>Add Travis and a basic smoke test (#33)</li>
+</ul>
+
+<h2 id="101--2016-07-28">1.0.1 / 2016-07-28</h2>
+
+<ul>
+  <li>include <code class="language-plaintext highlighter-rouge">_layouts</code>, <code class="language-plaintext highlighter-rouge">_includes</code>, and <code class="language-plaintext highlighter-rouge">_sass</code> dir in gem (#6)</li>
+</ul>
+
+<h2 id="100--2016-07-27">1.0.0 / 2016-07-27</h2>
+
+<ul>
+  <li>default layout: html <code class="language-plaintext highlighter-rouge">lang</code> attribute should allow user customization (#3)</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">normalize_whitespace</code> filter for meta description (#4)</li>
+  <li>Fix repo’s URL in contributing (#5)</li>
+</ul>
+<p>` and are linked to this file via
+    <a href="https://jekyllrb.com/docs/frontmatter/">FrontMatter</a> declaration <code class="language-plaintext highlighter-rouge">layout: base</code>.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">home.html</code> — The layout for your landing-page / home-page / index-page. [<a href="#home-layout">More Info.</a>]</li>
+  <li><code class="language-plaintext highlighter-rouge">page.html</code> — The layout for your documents that contain FrontMatter, but are not posts.</li>
+  <li><code class="language-plaintext highlighter-rouge">post.html</code> — The layout for your posts.</li>
+</ul>
+
+<h4 id="base-layout">Base Layout</h4>
+
+<p>From Minima v3 onwards, the base layout is named <strong><code class="language-plaintext highlighter-rouge">base.html</code></strong> instead of <code class="language-plaintext highlighter-rouge">default.html</code> to avoid confusing new users into
+assuming that name holds special status.</p>
+
+<p>Users migrating from older versions with customized <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> are advised to rename their copy to
+<code class="language-plaintext highlighter-rouge">_layouts/base.html</code>. Migrating users with additional customized layouts may either update front matter references to former
+<code class="language-plaintext highlighter-rouge">default.html</code> layout or create a new <code class="language-plaintext highlighter-rouge">default.html</code> layout referencing the current <code class="language-plaintext highlighter-rouge">base.html</code>, whichever route being the
+easiest:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+# new `_layouts/default.html` for backwards-compatibility when multiple
+# layouts have been customized.
+
+layout: base
+---
+
+&lt;h2 id="head"&gt;HEAD&lt;/h2&gt;
+
+&lt;h3 id="documentation"&gt;Documentation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Forward port v2.5.1 release (#399)&lt;/li&gt;
+  &lt;li&gt;Docs: remove Google+ (#373)&lt;/li&gt;
+  &lt;li&gt;Update README section on adding favicons to site (#438)&lt;/li&gt;
+  &lt;li&gt;Fix custom-styles.scss name in README (#610)&lt;/li&gt;
+  &lt;li&gt;Improve the msg to enable disqus in README (#627)&lt;/li&gt;
+  &lt;li&gt;Make docs consistent with code (#657)&lt;/li&gt;
+  &lt;li&gt;Highlight that the base branch is v3 (#719)&lt;/li&gt;
+  &lt;li&gt;Improve documentation for config options (#760)&lt;/li&gt;
+  &lt;li&gt;Add platform X supporting in README (#780)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="minor-enhancements"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add Keybase to social links (#400)&lt;/li&gt;
+  &lt;li&gt;Solarized skins (#404)&lt;/li&gt;
+  &lt;li&gt;Add a placeholder of favicons (#433)&lt;/li&gt;
+  &lt;li&gt;fix: make page.list_title optional (#303)&lt;/li&gt;
+  &lt;li&gt;Add stackoverflow to social media list (#443)&lt;/li&gt;
+  &lt;li&gt;Add social support for dev.to (#410)&lt;/li&gt;
+  &lt;li&gt;Add GitLab to social (#352)&lt;/li&gt;
+  &lt;li&gt;Support mutiple authors on post layout (#348)&lt;/li&gt;
+  &lt;li&gt;Re-implement site footer markup and styles (#448)&lt;/li&gt;
+  &lt;li&gt;Support pagination through posts in home layout (#450)&lt;/li&gt;
+  &lt;li&gt;Show the last modified date of posts (#432)&lt;/li&gt;
+  &lt;li&gt;Set margins of hr to improve readability (#461)&lt;/li&gt;
+  &lt;li&gt;Export a variable to let users to custom the font family of code (#462)&lt;/li&gt;
+  &lt;li&gt;Set margin-bottom of pagination (#458)&lt;/li&gt;
+  &lt;li&gt;Adjust margins of headings to make sections clear (#467)&lt;/li&gt;
+  &lt;li&gt;Rename favicons.html to custom-head.html (#468)&lt;/li&gt;
+  &lt;li&gt;Remove RSS icon from the social media list (#470)&lt;/li&gt;
+  &lt;li&gt;Improve the readablility of blockquotes (#481)&lt;/li&gt;
+  &lt;li&gt;Extract more color rules into skins (#452)&lt;/li&gt;
+  &lt;li&gt;Introduce "Dark Minima" skin (#335)&lt;/li&gt;
+  &lt;li&gt;Reduce spacing in the three largest headers (#538)&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class="language-plaintext highlighter-rouge"&gt;auto&lt;/code&gt; skin which honors the &lt;code class="language-plaintext highlighter-rouge"&gt;prefers-color-scheme&lt;/code&gt; media query (#634)&lt;/li&gt;
+  &lt;li&gt;Add google scholar. (#673)&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class="language-plaintext highlighter-rouge"&gt;x&lt;/code&gt; social icon (#756)&lt;/li&gt;
+  &lt;li&gt;Add Codeberg icon and update list of supported social links (#788)&lt;/li&gt;
+  &lt;li&gt;Added whatsapp social icon. (#781)&lt;/li&gt;
+  &lt;li&gt;Update GitLab icon (#765)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="major-enhancements"&gt;Major Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Allow skins to be defined and customized easily (#336)&lt;/li&gt;
+  &lt;li&gt;Drop support for scalar 'author' configuration (#384)&lt;/li&gt;
+  &lt;li&gt;Place skins in &lt;code class="language-plaintext highlighter-rouge"&gt;minima/skins&lt;/code&gt; to clarify purpose (#479)&lt;/li&gt;
+  &lt;li&gt;Add adaptive skin: &lt;code class="language-plaintext highlighter-rouge"&gt;solarized&lt;/code&gt; (#594)&lt;/li&gt;
+  &lt;li&gt;Generate social iconsheet during build (#686)&lt;/li&gt;
+  &lt;li&gt;Rename &lt;code class="language-plaintext highlighter-rouge"&gt;default&lt;/code&gt; layout to &lt;code class="language-plaintext highlighter-rouge"&gt;base&lt;/code&gt; (#690)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="bug-fixes"&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add missing rel=me attributes to social links (#386)&lt;/li&gt;
+  &lt;li&gt;Set the border radius of highlight (#426)&lt;/li&gt;
+  &lt;li&gt;Removed unnecessary whitespace-controls (#390)&lt;/li&gt;
+  &lt;li&gt;fix: overflow auto for tables (#296)&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class="language-plaintext highlighter-rouge"&gt;overflow-wrap: break-word&lt;/code&gt; to body tag (#321)&lt;/li&gt;
+  &lt;li&gt;Use "rem" unit in relative-font-size mixin (#436)&lt;/li&gt;
+  &lt;li&gt;Assign static value to variable outside forloop (#437)&lt;/li&gt;
+  &lt;li&gt;Add font-size styles for elements h5 and h6 (#441)&lt;/li&gt;
+  &lt;li&gt;Stop prefixing CSS calc with &lt;code class="language-plaintext highlighter-rouge"&gt;-webkit-&lt;/code&gt; (#445)&lt;/li&gt;
+  &lt;li&gt;Improve readability of post titles with diacritics (#449)&lt;/li&gt;
+  &lt;li&gt;Fix a bug of incorrect parsing of page.modified_date (#455)&lt;/li&gt;
+  &lt;li&gt;Specify the font size of the root element (#485)&lt;/li&gt;
+  &lt;li&gt;Fix script used for Google Analytics (#596)&lt;/li&gt;
+  &lt;li&gt;Open social links in new tabs (#625)&lt;/li&gt;
+  &lt;li&gt;change base-font-family sequence (#654)&lt;/li&gt;
+  &lt;li&gt;Fix responsiveness of social SVG sprites (#677)&lt;/li&gt;
+  &lt;li&gt;Improve "Subscribe" link in footer (#698)&lt;/li&gt;
+  &lt;li&gt;Fix deprecation warnings from Dart Sass (#700)&lt;/li&gt;
+  &lt;li&gt;Fix reference to base layout in &lt;code class="language-plaintext highlighter-rouge"&gt;404.html&lt;/code&gt; (#713)&lt;/li&gt;
+  &lt;li&gt;Minimal fixes for Disqus (#775)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="development-fixes"&gt;Development Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ignore .jekyll-cache (#439)&lt;/li&gt;
+  &lt;li&gt;Clean up and optimize .gitignore (#475)&lt;/li&gt;
+  &lt;li&gt;[chore] Normalize Travis CI builds (#480)&lt;/li&gt;
+  &lt;li&gt;chore(deps): bump Ruby version (#510)&lt;/li&gt;
+  &lt;li&gt;Conditionally load GFM-parser gem in CI builds (#535)&lt;/li&gt;
+  &lt;li&gt;Improve CI workflow configuration (#609)&lt;/li&gt;
+  &lt;li&gt;Migrate from TravisCI to GitHub Actions (#633)&lt;/li&gt;
+  &lt;li&gt;Build and deploy demo site via GH Action workflow (#636)&lt;/li&gt;
+  &lt;li&gt;Improve readability of config file (#703)&lt;/li&gt;
+  &lt;li&gt;Trigger demo-site build manually (#714)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="251"&gt;2.5.1&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-1"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Allow use and testing with Jekyll 4.x (#398)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="bug-fixes-1"&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Footer overlapping issue (Support Microsoft Explorer 11) (#248)&lt;/li&gt;
+  &lt;li&gt;Update multiline config comment. (#346)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="development-fixes-1"&gt;Development Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;remove deprecated &lt;code class="language-plaintext highlighter-rouge"&gt;sudo: false&lt;/code&gt; in .travis.yml (#347)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="250"&gt;2.5.0&lt;/h2&gt;
+
+&lt;h3 id="bug-fixes-2"&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add &lt;code class="language-plaintext highlighter-rouge"&gt;jekyll-feed&lt;/code&gt; plugin in config (#228)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="minor-enhancements-2"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stick footer for short posts (#223)&lt;/li&gt;
+  &lt;li&gt;Consolidate trigger SVG paths (#148)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="241"&gt;2.4.1&lt;/h2&gt;
+
+&lt;h3 id="bug-fixes-3"&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reintroduce removed social includes for backwards compatibility (#217)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="240"&gt;2.4.0&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-3"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add better system fonts (#205)&lt;/li&gt;
+  &lt;li&gt;Remove whitespace due to Liquid tags in generated HTML (#202)&lt;/li&gt;
+  &lt;li&gt;Adding Mastodon to the social networks (#198)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="bug-fixes-4"&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;social icons should resolve baseurl properly (#201)&lt;/li&gt;
+  &lt;li&gt;fix: styling main element in IE 11 (#199)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="documentation-1"&gt;Documentation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Improve thw wording in index.md (#175)&lt;/li&gt;
+  &lt;li&gt;Update config description comment (#203)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="230"&gt;2.3.0&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add option to show excerpts on the homepage (#90)&lt;/li&gt;
+  &lt;li&gt;Handle RSS feed with jekyll-feed (#183)&lt;/li&gt;
+  &lt;li&gt;Test build with Ruby 2.4 on CI (#184)&lt;/li&gt;
+  &lt;li&gt;Document how to customize navigation links (#192)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="221"&gt;2.2.1&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Revert social_sites hash for retrocompatibility (#190)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="220"&gt;2.2.0&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-4"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;handling content outside of posts (#88)&lt;/li&gt;
+  &lt;li&gt;Add default table styles (#144)&lt;/li&gt;
+  &lt;li&gt;Add &lt;code class="language-plaintext highlighter-rouge"&gt;jekyll-seo-tag&lt;/code&gt; dependency (#139)&lt;/li&gt;
+  &lt;li&gt;Add Microformats markup (#160)&lt;/li&gt;
+  &lt;li&gt;Add more social links (#141)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="documentation-2"&gt;Documentation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Docs: clarification about page title (#142)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="211--2017-04-13"&gt;2.1.1 / 2017-04-13&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-5"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Close #55: Improve mobile user experience (#62)&lt;/li&gt;
+  &lt;li&gt;Remove incomplete status from spec summary (#63)&lt;/li&gt;
+  &lt;li&gt;Use date_format if set in configuration (#70)&lt;/li&gt;
+  &lt;li&gt;Corrected misspelled word (#72)&lt;/li&gt;
+  &lt;li&gt;Scale headings relative to base-font-size (#78)&lt;/li&gt;
+  &lt;li&gt;Remove 2.0 post-install message (#82)&lt;/li&gt;
+  &lt;li&gt;Fixes #115 - Only include the nav tag if there are pages to be displayed in the menu (#116)&lt;/li&gt;
+  &lt;li&gt;Fixes #80, #106. Make the hamburger work with pure CSS. (#111)&lt;/li&gt;
+  &lt;li&gt;add &lt;code class="language-plaintext highlighter-rouge"&gt;header_pages&lt;/code&gt; config to link only specific files in header (#52)&lt;/li&gt;
+  &lt;li&gt;More easily customizable CSS (#117)&lt;/li&gt;
+  &lt;li&gt;Use relative size for fonts and line-height (#103)&lt;/li&gt;
+  &lt;li&gt;Add 404 page from jekyll &lt;code class="language-plaintext highlighter-rouge"&gt;master&lt;/code&gt; (#121)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="development-fixes-2"&gt;Development Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Remove duplicate .sass-cache  (#71)&lt;/li&gt;
+  &lt;li&gt;Demo minima on GitHub Pages (#76)&lt;/li&gt;
+  &lt;li&gt;Remove the Rakefile (#118)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="documentation-3"&gt;Documentation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Update README with theme content description (#91)&lt;/li&gt;
+  &lt;li&gt;Update default local URL (#120)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="210--2016-11-15"&gt;2.1.0 / 2016-11-15&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-6"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Update gemspec to require at least Jekyll 3.3 (#59)&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class="language-plaintext highlighter-rouge"&gt;absolute_url&lt;/code&gt; filter for disqus (#66)&lt;/li&gt;
+  &lt;li&gt;replace &lt;code class="language-plaintext highlighter-rouge"&gt;example/index.html&lt;/code&gt; with &lt;code class="language-plaintext highlighter-rouge"&gt;example/index.md&lt;/code&gt; (#58)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="development-fixes-3"&gt;Development Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Example should require Jekyll 3.3 (#61)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="200--2016-10-06"&gt;2.0.0 / 2016-10-06&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-7"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;priority to site.url when site.github.url is available (#46)&lt;/li&gt;
+  &lt;li&gt;Move contents of the index.html page to the ‘home’ layout (#48)&lt;/li&gt;
+  &lt;li&gt;Use  new &lt;code class="language-plaintext highlighter-rouge"&gt;absolute_url&lt;/code&gt; and &lt;code class="language-plaintext highlighter-rouge"&gt;relative_url&lt;/code&gt; filters in minima (#57)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="development-fixes-4"&gt;Development Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use standardized tab size of 2 spaces (#44)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="major-enhancements-1"&gt;Major Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;move &lt;code class="language-plaintext highlighter-rouge"&gt;css/&lt;/code&gt; directory from jekyll into &lt;code class="language-plaintext highlighter-rouge"&gt;assets/&lt;/code&gt; (#43)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="bug-fixes-5"&gt;Bug Fixes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fix html proofer errors (#49)&lt;/li&gt;
+  &lt;li&gt;Update gem regex to include new &lt;code class="language-plaintext highlighter-rouge"&gt;assets&lt;/code&gt; directory (#54)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="120--2016-09-12"&gt;1.2.0 / 2016-09-12&lt;/h2&gt;
+
+&lt;h3 id="minor-enhancements-8"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Look to site.url when available (#35)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="documentation-4"&gt;Documentation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Move instruction for CSS in install section (#37)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="110--2016-09-07"&gt;1.1.0 / 2016-09-07&lt;/h2&gt;
+
+&lt;h3 id="major-enhancements-2"&gt;Major Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add support to Disqus (#21)&lt;/li&gt;
+  &lt;li&gt;Google analytics support (#26)&lt;/li&gt;
+  &lt;li&gt;Look for &lt;code class="language-plaintext highlighter-rouge"&gt;site.github.url&lt;/code&gt; if it exists (#25)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="minor-enhancements-9"&gt;Minor Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed Flash Of Unstyled SVG (#12)&lt;/li&gt;
+  &lt;li&gt;Added “author” in footer instead of double title (#22)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="documentation-5"&gt;Documentation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Document how to link to the theme styles (#18)&lt;/li&gt;
+  &lt;li&gt;Update Example to resemble Default site (#24)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="development-enhancements"&gt;Development Enhancements&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use upstream gemspec file matcher (#9)&lt;/li&gt;
+  &lt;li&gt;Fix gemspec regex (#31)&lt;/li&gt;
+  &lt;li&gt;Add Travis and a basic smoke test (#33)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="101--2016-07-28"&gt;1.0.1 / 2016-07-28&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;include &lt;code class="language-plaintext highlighter-rouge"&gt;_layouts&lt;/code&gt;, &lt;code class="language-plaintext highlighter-rouge"&gt;_includes&lt;/code&gt;, and &lt;code class="language-plaintext highlighter-rouge"&gt;_sass&lt;/code&gt; dir in gem (#6)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="100--2016-07-27"&gt;1.0.0 / 2016-07-27&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;default layout: html &lt;code class="language-plaintext highlighter-rouge"&gt;lang&lt;/code&gt; attribute should allow user customization (#3)&lt;/li&gt;
+  &lt;li&gt;Use &lt;code class="language-plaintext highlighter-rouge"&gt;normalize_whitespace&lt;/code&gt; filter for meta description (#4)&lt;/li&gt;
+  &lt;li&gt;Fix repo’s URL in contributing (#5)&lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre></div></div>
+
+<h4 id="home-layout">Home Layout</h4>
+
+<p><code class="language-plaintext highlighter-rouge">home.html</code> is a flexible HTML layout for the site’s landing-page / home-page / index-page. <br /></p>
+
+<h5 id="main-heading-and-content-injection"><em>Main Heading and Content-injection</em></h5>
+
+<p>From Minima v2.2 onwards, the <em>home</em> layout will inject all content from your <code class="language-plaintext highlighter-rouge">index.md</code> / <code class="language-plaintext highlighter-rouge">index.html</code> <strong>before</strong> the <strong><code class="language-plaintext highlighter-rouge">Posts</code></strong> heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. <em>We recommended that you title this section with a Heading2 (<code class="language-plaintext highlighter-rouge">##</code>)</em>.</p>
+
+<p>Usually the <code class="language-plaintext highlighter-rouge">site.title</code> itself would suffice as the implicit ‘main-title’ for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a <code class="language-plaintext highlighter-rouge">title</code> variable in the document’s front matter and it will be rendered with an <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> tag.</p>
+
+<h5 id="post-listing"><em>Post Listing</em></h5>
+
+<p>This section is optional from Minima v2.2 onwards.<br />
+It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to <code class="language-plaintext highlighter-rouge">show_drafts</code>).</p>
+
+<p>The title for this section is <code class="language-plaintext highlighter-rouge">Posts</code> by default and rendered with an <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> tag. You can customize this heading by defining a <code class="language-plaintext highlighter-rouge">list_title</code> variable in the document’s front matter.</p>
+
+<h3 id="includes">Includes</h3>
+
+<p>Refers to snippets of code within the <code class="language-plaintext highlighter-rouge">_includes</code> directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">disqus_comments.html</code> — Code to markup disqus comment box.</li>
+  <li><code class="language-plaintext highlighter-rouge">footer.html</code> — Defines the site’s footer section.</li>
+  <li><code class="language-plaintext highlighter-rouge">google-analytics.html</code> — Inserts Google Analytics module (active only in production environment).</li>
+  <li><code class="language-plaintext highlighter-rouge">head.html</code> — Code-block that defines the <code class="language-plaintext highlighter-rouge">&lt;head&gt;&lt;/head&gt;</code> in <em>default</em> layout.</li>
+  <li><code class="language-plaintext highlighter-rouge">custom-head.html</code> — Placeholder to allow users to add more metadata to <code class="language-plaintext highlighter-rouge">&lt;head /&gt;</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">header.html</code> — Defines the site’s main header section. By default, pages with a defined <code class="language-plaintext highlighter-rouge">title</code> attribute will have links displayed here.</li>
+  <li><code class="language-plaintext highlighter-rouge">social.html</code> — Renders social-media icons based on the <code class="language-plaintext highlighter-rouge">minima:social_links</code> data in the config file.</li>
+  <li><code class="language-plaintext highlighter-rouge">social-item.html</code> — Template to render individual list-item containing graphic link to configured social-profile.</li>
+  <li><code class="language-plaintext highlighter-rouge">social-links/*.svg</code> — SVG markup components of supported social-icons.</li>
+</ul>
+
+<h3 id="sass">Sass</h3>
+
+<p>Refers to <code class="language-plaintext highlighter-rouge">.scss</code> files within the <code class="language-plaintext highlighter-rouge">_sass</code> directory that define the theme’s styles.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">minima/skins/classic.scss</code> — The “classic” skin of the theme. <em>Used by default.</em></li>
+  <li><code class="language-plaintext highlighter-rouge">minima/initialize.scss</code> — A component that defines the theme’s <em>skin-agnostic</em> variable defaults and sass partials.
+It imports the following components (in the following order):
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">minima/custom-variables.scss</code> — A hook that allows overriding variable defaults and mixins. (<em>Note: Cannot override styles</em>)</li>
+      <li><code class="language-plaintext highlighter-rouge">minima/_base.scss</code> — Sass partial for resets and defines base styles for various HTML elements.</li>
+      <li><code class="language-plaintext highlighter-rouge">minima/_layout.scss</code> — Sass partial that defines the visual style for various layouts.</li>
+      <li><code class="language-plaintext highlighter-rouge">minima/custom-styles.scss</code> — A hook that allows overriding styles defined above. (<em>Note: Cannot override variables</em>)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Refer the <a href="#skins">skins</a> section for more details.</p>
+
+<h3 id="assets">Assets</h3>
+
+<p>Refers to various asset files within the <code class="language-plaintext highlighter-rouge">assets</code> directory.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">assets/css/style.scss</code> — Imports sass files from within the <code class="language-plaintext highlighter-rouge">_sass</code> directory and gets processed into the theme’s
+stylesheet: <code class="language-plaintext highlighter-rouge">assets/css/styles.css</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">assets/minima-social-icons.html</code> — Imports enabled social-media icon graphic and gets processed into a composite SVG file.
+Refer <a href="#social-networks">section on social networks</a> for its usage.</li>
+</ul>
+
+<h3 id="plugins">Plugins</h3>
+
+<p>Minima comes with <a href="https://github.com/jekyll/jekyll-seo-tag"><code class="language-plaintext highlighter-rouge">jekyll-seo-tag</code></a> plugin preinstalled to make sure your website gets the most useful meta tags. See <a href="https://github.com/jekyll/jekyll-seo-tag#usage">usage</a> to know how to set it up.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Have the following line in your config file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+</code></pre></div></div>
+
+<h3 id="customizing-templates">Customizing templates</h3>
+
+<p>To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+e.g., to override the <a href="_includes/head.html"><code class="language-plaintext highlighter-rouge">_includes/head.html </code></a> file to specify a custom style path, create an <code class="language-plaintext highlighter-rouge">_includes</code> directory, copy <code class="language-plaintext highlighter-rouge">_includes/head.html</code> from minima gem folder to <code class="language-plaintext highlighter-rouge">&lt;yoursite&gt;/_includes</code> and start editing that file.</p>
+
+<p>The site’s default CSS has now moved to a new place within the gem itself, <a href="/assets/css/style.css"><code class="language-plaintext highlighter-rouge">assets/css/style.scss</code></a>.</p>
+
+<p>In Minima 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
+<em>CSS overrides</em> in sync with upstream changes released in future versions, you can collect all your overrides for the Sass
+variables and mixins inside a sass file placed at <code class="language-plaintext highlighter-rouge">_sass/minima/custom-variables.scss</code> and all other overrides inside a sass file
+placed at path <code class="language-plaintext highlighter-rouge">_sass/minima/custom-styles.scss</code>.</p>
+
+<p>You need not maintain entire partial(s) at the site’s source just to override a few styles. However, your stylesheet’s primary
+source (<code class="language-plaintext highlighter-rouge">assets/css/style.scss</code>) should contain the following:</p>
+
+<ul>
+  <li>Front matter dashes at the very beginning (can be empty).</li>
+  <li>Directive to import a skin.</li>
+  <li>Directive to import the base styles (automatically loads overrides when available).</li>
+</ul>
+
+<p>Therefore, your <code class="language-plaintext highlighter-rouge">assets/css/style.scss</code> should contain the following at minimum:</p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span>
+<span class="nt">---</span>
+
+<span class="k">@import</span>
+  <span class="s2">"minima/skins/classic"</span><span class="o">,</span>
+  <span class="s2">"minima/initialize"</span><span class="o">;</span>
+</code></pre></div></div>
+
+<h4 id="skins">Skins</h4>
+
+<p>Minima 3.0 supports defining and switching between multiple color-palettes (or <em>skins</em>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+├── minima.scss
+└── minima
+    └── _syntax-highlighting.scss
+</code></pre></div></div>
+
+<p>A skin is a Sass file placed in the directory <code class="language-plaintext highlighter-rouge">_sass/minima/skins</code> and it defines the variable defaults related to the “color”
+aspect of the theme. It also embeds the Sass rules related to syntax-highlighting since that is primarily related to color and
+has to be adjusted in harmony with the current skin.</p>
+
+<p>The default color palette for Minima is defined within <code class="language-plaintext highlighter-rouge">_sass/minima/skins/classic.scss</code>. To switch to another available skin,
+simply declare it in the site’s config file. For example, to activate <code class="language-plaintext highlighter-rouge">_sass/minima/skins/dark.scss</code> as the skin, the setting
+would be:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">minima</span><span class="pi">:</span>
+  <span class="na">skin</span><span class="pi">:</span> <span class="s">dark</span>
+</code></pre></div></div>
+
+<p>As part of the migration to support skins, some existing Sass variables have been retired and some <strong>have been redefined</strong> as
+summarized in the following table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Minima 2.0</th>
+      <th>Minima 3.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">$brand-color</code></td>
+      <td><code class="language-plaintext highlighter-rouge">$link-base-color</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">$grey-*</code></td>
+      <td><code class="language-plaintext highlighter-rouge">$brand-*</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">$orange-color</code></td>
+      <td><em>has been removed</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="available-skins">Available skins</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Skin setting</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>classic</td>
+      <td>Default, light color scheme.</td>
+    </tr>
+    <tr>
+      <td>dark</td>
+      <td>Dark variant of the classic skin.</td>
+    </tr>
+    <tr>
+      <td>auto</td>
+      <td><em>Adaptive skin</em> based on the default classic and dark skins.</td>
+    </tr>
+    <tr>
+      <td>solarized</td>
+      <td><em>Adaptive skin</em> for <a href="https://github.com/solarized">solarized</a> color scheme skins.</td>
+    </tr>
+    <tr>
+      <td>solarized-light</td>
+      <td>Light variant of solarized color scheme.</td>
+    </tr>
+    <tr>
+      <td>solarized-dark</td>
+      <td>Dark variant of solarized color scheme.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>:bulb: Adaptive skins switch between the “light” and “dark” variants based on the user’s operating system setting or browser setting
+(via CSS Media Query <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a>).</em></p>
+
+<h3 id="customize-navigation-links">Customize navigation links</h3>
+
+<p>This allows you to set which pages you want to appear in the navigation area and configure order of the links.</p>
+
+<p>For instance, to only link to the <code class="language-plaintext highlighter-rouge">about</code> and the <code class="language-plaintext highlighter-rouge">portfolio</code> page, add the following to your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">header_pages</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">about.md</span>
+  <span class="pi">-</span> <span class="s">portfolio.md</span>
+</code></pre></div></div>
+
+<h3 id="change-default-date-format">Change default date format</h3>
+
+<p>You can change the default date format by specifying <code class="language-plaintext highlighter-rouge">site.minima.date_format</code>
+in <code class="language-plaintext highlighter-rouge">_config.yml</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+</code></pre></div></div>
+
+<h3 id="extending-the-head-">Extending the <code class="language-plaintext highlighter-rouge">&lt;head /&gt;</code></h3>
+
+<p>You can <em>add</em> custom metadata to the <code class="language-plaintext highlighter-rouge">&lt;head /&gt;</code> of your layouts by creating a file <code class="language-plaintext highlighter-rouge">_includes/custom-head.html</code> in your source directory. For example, to add favicons:</p>
+
+<ol>
+  <li>Head over to <a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a> to add your own favicons.</li>
+  <li><a href="#customization">Customize</a> default <code class="language-plaintext highlighter-rouge">_includes/custom-head.html</code> in your source directory and insert the given code snippet.</li>
+</ol>
+
+<h3 id="enabling-comments-via-disqus">Enabling comments (via Disqus)</h3>
+
+<p>Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.</p>
+
+<p>:warning: <code class="language-plaintext highlighter-rouge">url</code>, e.g. <code class="language-plaintext highlighter-rouge">https://example.com</code>, must be set in you config file for Disqus to work.</p>
+
+<p>To enable it, after setting the url field, you also need to add the following lines to your Jekyll site:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">disqus</span><span class="pi">:</span>
+    <span class="na">shortname</span><span class="pi">:</span> <span class="s">my_disqus_shortname</span>
+</code></pre></div></div>
+
+<p>You can find out more about Disqus’ shortnames <a href="https://help.disqus.com/installation/whats-a-shortname">here</a>.</p>
+
+<p>Comments are enabled by default and will only appear in production, i.e., <code class="language-plaintext highlighter-rouge">JEKYLL_ENV=production</code></p>
+
+<p>If you don’t want to display comments for a particular post you can disable them by adding <code class="language-plaintext highlighter-rouge">comments: false</code> to that post’s YAML Front Matter.</p>
+
+<h3 id="author-metadata">Author Metadata</h3>
+
+<p>From <code class="language-plaintext highlighter-rouge">Minima-3.0</code> onwards, <code class="language-plaintext highlighter-rouge">site.author</code> is expected to be a mapping of attributes instead of a simple scalar value:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">John Smith</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s2">"</span><span class="s">john.smith@foobar.com"</span>
+</code></pre></div></div>
+
+<p>To migrate existing metadata, update your config file and any reference to the object in your layouts and includes as summarized below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Minima 2.x</th>
+      <th>Minima 3.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">site.author</code></td>
+      <td><code class="language-plaintext highlighter-rouge">site.author.name</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">site.email</code></td>
+      <td><code class="language-plaintext highlighter-rouge">site.author.email</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="social-networks">Social networks</h3>
+
+<p>You can add links to the accounts you have on other sites, with respective icon as an SVG graphic, via the config file.
+From <code class="language-plaintext highlighter-rouge">Minima-3.0</code> onwards, the social media data is sourced from config key <code class="language-plaintext highlighter-rouge">minima.social_links</code>. It is a list of key-value pairs, each entry
+corresponding to a link rendered in the footer. For example, to render links to Jekyll GitHub repository and Twitter account, one should have:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">minima</span><span class="pi">:</span>
+  <span class="na">social_links</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="pi">{</span> <span class="nv">platform</span><span class="pi">:</span> <span class="nv">github</span><span class="pi">,</span>  <span class="nv">user_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://github.com/jekyll/jekyll"</span> <span class="pi">}</span>
+    <span class="pi">-</span> <span class="pi">{</span> <span class="nv">platform</span><span class="pi">:</span> <span class="nv">twitter</span><span class="pi">,</span> <span class="nv">user_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://twitter.com/jekyllrb"</span> <span class="pi">}</span>
+</code></pre></div></div>
+
+<p>Apart from the necessary keys illustrated above, <code class="language-plaintext highlighter-rouge">title</code> may also be defined to render a custom link-title. By default, the title is the same
+as <code class="language-plaintext highlighter-rouge">platform</code>. The <code class="language-plaintext highlighter-rouge">platform</code> key corresponds to the SVG id of the sprite in the composite file at URL <code class="language-plaintext highlighter-rouge">/assets/minima-social-icons.svg</code>.</p>
+
+<p>The theme ships with an icon for <code class="language-plaintext highlighter-rouge">rss</code> and icons of select social-media platforms:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">codeberg</code></li>
+  <li><code class="language-plaintext highlighter-rouge">devto</code></li>
+  <li><code class="language-plaintext highlighter-rouge">dribbble</code></li>
+  <li><code class="language-plaintext highlighter-rouge">facebook</code></li>
+  <li><code class="language-plaintext highlighter-rouge">flickr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">github</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gitlab</code></li>
+  <li><code class="language-plaintext highlighter-rouge">google_scholar</code></li>
+  <li><code class="language-plaintext highlighter-rouge">instagram</code></li>
+  <li><code class="language-plaintext highlighter-rouge">keybase</code></li>
+  <li><code class="language-plaintext highlighter-rouge">linkedin</code></li>
+  <li><code class="language-plaintext highlighter-rouge">mastodon</code></li>
+  <li><code class="language-plaintext highlighter-rouge">microdotblog</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pinterest</code></li>
+  <li><code class="language-plaintext highlighter-rouge">stackoverflow</code></li>
+  <li><code class="language-plaintext highlighter-rouge">telegram</code></li>
+  <li><code class="language-plaintext highlighter-rouge">twitter</code></li>
+  <li><code class="language-plaintext highlighter-rouge">whatsapp</code></li>
+  <li><code class="language-plaintext highlighter-rouge">x</code></li>
+  <li><code class="language-plaintext highlighter-rouge">youtube</code></li>
+</ul>
+
+<p>To render a link to a platform not listed above, one should first create a file at path <code class="language-plaintext highlighter-rouge">_includes/social-icons/&lt;PLATFORM&gt;.svg</code> comprised of
+graphic markup <strong>without the top-level <code class="language-plaintext highlighter-rouge">&lt;svg&gt;&lt;/svg&gt;</code></strong>. The icon is expected to be centered within a viewbox of <code class="language-plaintext highlighter-rouge">"0 0 16 16"</code>. Then, make an
+entry under key <code class="language-plaintext highlighter-rouge">minima.social_links</code>.</p>
+
+<p>For example, to render a link to an account of user <code class="language-plaintext highlighter-rouge">john.doe</code> at platform <code class="language-plaintext highlighter-rouge">deviantart.com</code>, the steps to follow would be:</p>
+<ul>
+  <li>Get DeviantArt logo in SVG format.</li>
+  <li>Using a text-editor, open the downloaded file to inspect if the <code class="language-plaintext highlighter-rouge">viewBox</code> attribute is defined on the <code class="language-plaintext highlighter-rouge">&lt;svg&gt;</code> element and is set
+as <code class="language-plaintext highlighter-rouge">"0 0 16 16" (or similar "square" dimension)</code>.</li>
+  <li>If the <code class="language-plaintext highlighter-rouge">viewBox</code> attribute is non-square or undefined, the graphic <em>may optionally need</em> to be edited in a vector graphic editor such as
+<em>Inkscape</em> or <em>Adobe Illustrator</em> for properly aligned render on page.</li>
+  <li>Edit the SVG file in text-editor to delete everything <strong>except</strong> what is contained between <code class="language-plaintext highlighter-rouge">&lt;svg&gt;&lt;/svg&gt;</code> and save it into the Jekyll
+project at path <code class="language-plaintext highlighter-rouge">_includes/social-icons/deviantart.svg</code>.</li>
+  <li>Finally, edit the Jekyll config file to enable loading of new icon graphic with:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">minima</span><span class="pi">:</span>
+  <span class="na">social_links</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">platform</span><span class="pi">:</span> <span class="s">deviantart</span>  <span class="c1"># same as SVG filename.</span>
+      <span class="na">user_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://www.deviantart.com/john.doe"</span>  <span class="c1"># URL of profile page.</span>
+      <span class="na">title</span><span class="pi">:</span>  <span class="s">My profile at DeviantArt.com</span>  <span class="c1"># Optional. Text displayed on hovering over link.</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><strong>Notes:</strong></p>
+<ul>
+  <li>The list of social-links is declarative. List-items are rendered in the order declared in the downstream configuration file and not merged
+with entries from upstream config file(s) such as theme-config-file or prior local config files.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">user_url</code> is rendered as given without handling any special characters within.</li>
+</ul>
+
+<h3 id="enabling-google-analytics">Enabling Google Analytics</h3>
+
+<p>To enable Google Analytics, add the following lines to your Jekyll site:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">google_analytics</span><span class="pi">:</span> <span class="s">UA-NNNNNNNN-N</span>
+</code></pre></div></div>
+
+<p>Google Analytics will only appear in production, i.e., <code class="language-plaintext highlighter-rouge">JEKYLL_ENV=production</code></p>
+
+<h3 id="enabling-excerpts-on-the-home-page">Enabling Excerpts on the Home Page</h3>
+
+<p>To display post-excerpts on the Home Page, simply add the following to your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">show_excerpts</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the <a href="http://contributor-covenant.org">Contributor Covenant</a> code of conduct.</p>
+
+<h2 id="development">Development</h2>
+
+<p>To set up your environment to develop this theme, run <code class="language-plaintext highlighter-rouge">script/bootstrap</code>.</p>
+
+<p>To test your theme, run <code class="language-plaintext highlighter-rouge">script/server</code> (or <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>) and open your browser at <code class="language-plaintext highlighter-rouge">http://localhost:4000</code>. This starts a Jekyll server using your theme and the contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.</p>
+
+<h2 id="license">License</h2>
+
+<p>The theme is available as open source under the terms of the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+
+      </section>
+
+      <footer>
+        <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>

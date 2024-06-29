@@ -1,0 +1,34 @@
+files:
+- name: index.html
+  path: \index.html
+- name: app.json
+  path: \.obsidian\app.json
+- name: appearance.json
+  path: \.obsidian\appearance.json
+- name: core-plugins-migration.json
+  path: \.obsidian\core-plugins-migration.json
+- name: core-plugins.json
+  path: \.obsidian\core-plugins.json
+- name: workspace.json
+  path: \.obsidian\workspace.json
+- name: index.html
+  path: \fashion-history\index.html
+- name: links.md
+  path: \fashion-history\links.md
+- name: index.html
+  path: \technical-writing\index.html
+- name: links.md
+  path: \technical-writing\links.md
+- name: index.html
+  path: \texas-history\index.html
+- name: links.md
+  path: \texas-history\links.md
+folders:
+- name: .obsidian
+  path: \.obsidian
+- name: fashion-history
+  path: \fashion-history
+- name: technical-writing
+  path: \technical-writing
+- name: texas-history
+  path: \texas-history
