@@ -1,4 +1,5 @@
 ---
+title: Texas History Links
 ---
 
 [General Timeline](https://www.thestoryoftexas.com/discover/texas-history-timeline)
