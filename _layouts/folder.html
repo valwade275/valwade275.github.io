@@ -126,7 +126,7 @@
           {% if folder %}
             {% for file in folder.listings.files %}
               <!-- Ensure the file links open in a new tab and allow the browser to handle the file types | replace: '.md', '.html' -->
-              <li><a href="{{ file.path }}" target="_blank">{{ file.name }}</a></li>
+              <li><a href="{{ file.path | append: 'index.html' }}" target="_blank">{{ file.name }}</a></li>
             {% endfor %}
           {% else %}
             <li>No files found in this folder.</li>
