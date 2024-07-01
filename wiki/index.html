@@ -6,21 +6,34 @@ title: Val's Wiki
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<!--<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Val's Wiki</title>
   
-</head>
+</head>-->
 
 <body>
+ 
   <header>
-    <h1>Val's Wiki</h1>
+    <div class="nav-container">
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </div>
+    <div class="title">
+      <h1>Val's Wiki</h1>
+    </div>
   </header>
+
   <main>
     <h2 class="tc">Welcome!</h2>
     <p>This is my wiki and personal <a href="https://maggieappleton.com/garden-history">digital garden</a>. Feel free to wander. You'll find a collection of ideas and fragments of topics that interest me.</p>
     <h3>Wiki Topics</h3>
+
+    <section class="wiki-topics" id="wiki-topics">
+      <!-- Folder titles will be dynamically inserted here -->
+    </section>
 
   {% assign folders = site.pages | where_exp:"item", "item.path contains 'wiki'" %}
   {% assign wikifolders = "" | split:"" %}
@@ -32,10 +45,10 @@ title: Val's Wiki
 
   {% assign wikifolders = wikifolders | uniq | sort %}
 
-  <div class="w-100 cf">
+  <div class="wiki-topics-container">
     {% for folder in wikifolders %}
       {% unless folder contains 'md' or folder contains 'html' %}
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/{{folder}}/index.html"><div class="bg-near-white pa3">{{folder | capitalize}}</div></a>
         </div>
       {% endunless %}
@@ -52,6 +65,29 @@ title: Val's Wiki
 
   </main>
   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('listings.json')
+        .then(response => response.json())
+        .then(data => {
+          const topicsContainer = document.getElementById('wiki-topics');
+          data.forEach(item => {
+            const topicDiv = document.createElement('div');
+            topicDiv.className = 'topic';
+
+            const topicLink = document.createElement('a');
+            topicLink.href = item.url;
+            topicLink.textContent = item.title;
+            topicLink.className = 'link black';
+
+            topicDiv.appendChild(topicLink);
+            topicsContainer.appendChild(topicDiv);
+          });
+        })
+        .catch(error => console.error('Error fetching the listings:', error));
+    });
+  </script>
+
   <footer>
     <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
   </footer>

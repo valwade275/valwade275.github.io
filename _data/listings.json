@@ -1,6 +1,70 @@
 {
   "folders": [
     {
+      "name": "animals",
+      "path": "/animals",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/animals/links.md"
+          }
+        ],
+        "path": "/animals"
+      }
+    },
+    {
+      "name": "art",
+      "path": "/art",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/art/links.md"
+          }
+        ],
+        "path": "/art"
+      }
+    },
+    {
+      "name": "books",
+      "path": "/books",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/books/links.md"
+          }
+        ],
+        "path": "/books"
+      }
+    },
+    {
+      "name": "exercise",
+      "path": "/exercise",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/exercise/links.md"
+          }
+        ],
+        "path": "/exercise"
+      }
+    },
+    {
       "name": "fashion-history",
       "path": "/fashion-history",
       "listings": {
@@ -8,6 +72,10 @@
 
         ],
         "files": [
+          {
+            "name": "2024-06-30 02.03.52.md",
+            "path": "/fashion-history/2024-06-30 02.03.52.md"
+          },
           {
             "name": "index.html",
             "path": "/fashion-history/index.html"
@@ -18,6 +86,70 @@
           }
         ],
         "path": "/fashion-history"
+      }
+    },
+    {
+      "name": "gardening",
+      "path": "/gardening",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/gardening/links.md"
+          }
+        ],
+        "path": "/gardening"
+      }
+    },
+    {
+      "name": "getting-outdoors",
+      "path": "/getting-outdoors",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/getting-outdoors/links.md"
+          }
+        ],
+        "path": "/getting-outdoors"
+      }
+    },
+    {
+      "name": "music",
+      "path": "/music",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/music/links.md"
+          }
+        ],
+        "path": "/music"
+      }
+    },
+    {
+      "name": "poetry",
+      "path": "/poetry",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/poetry/links.md"
+          }
+        ],
+        "path": "/poetry"
       }
     },
     {

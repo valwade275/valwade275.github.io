@@ -9,6 +9,7 @@
     /* Include your CSS styles here */
     ul {
       list-style-type: none;
+      padding: 0;
     }
     body {
       font-family: Arial, sans-serif;
@@ -69,6 +70,9 @@
     main h2, main h3 {
       text-align: center;
     }
+    .left-align {
+      text-align: left; /* New class for left alignment */
+    }
     footer {
       text-align: center;
       padding: 1rem 0;
@@ -103,24 +107,32 @@
       <ul class="breadcrumb">
         <li><a href="/">Home</a></li>
         {% assign path_parts = page.dir | split: '/' %}
+        {% assign full_path = "" %}
         {% for part in path_parts %}
           {% if part %}
+            {% assign full_path = full_path | append: part | append: '/' %}
             <li>
-              <a href="{{ '/' | append: part | append: '/' }}">{{ part | capitalize }}</a>
+              <a href="{{ full_path }}">{{ part | capitalize }}</a>
             </li>
           {% endif %}
         {% endfor %}
       </ul>
-      <h2>Files in {{ page.title }}</h2>
-      <p>{{content}}</p> <!-- Centered content -->
-      <ul>
-        {% assign folder_files = site.pages | where_exp: "item", "item.path contains page.dir" %}
-        {% for file in folder_files %}
-          {% if file.path contains '.md' %}
-            <li><a href="{{ file.url }}">{{ file.path | split: '/' | last }}</a></li>
+      <h2>Wiki Folder: {{ page.title }}</h2>
+      <p>{{ content }}</p> <!-- Centered content -->
+      <div class="left-align">
+        <ul>
+          {% assign folder_name = page.dir | split: '/' | last %}
+          {% assign folder = site.data.listings.folders | where: "name", folder_name | first %}
+          {% if folder %}
+            {% for file in folder.listings.files %}
+              <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
+              <li><a href="{{ file.path | replace: '.md', '.html' }}" target="_blank">{{ file.name }}</a></li>
+            {% endfor %}
+          {% else %}
+            <li>No files found in this folder.</li>
           {% endif %}
-        {% endfor %}
-      </ul>
+        </ul>
+      </div>
     </div>
   </main>
   <footer>

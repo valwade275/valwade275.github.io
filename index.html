@@ -49,25 +49,41 @@
         a:hover {
             color: #555;
         }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin-bottom: 1rem;
+        }
+        .link-list li::before {
+            content: "🔗";
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My GitHub Homepage</h1>
-        <h3>Note: This site is in progress!</h3>
+        <!--<h3>Note: This site is in progress!</h3>-->
     </header>
     <main>
         <h2>Hi, I'm Valerie Wade 👋</h2>
-        <h3>I'm a passionate technical writer and project manager based in Houston, Texas.</h3>
-        <p> 
-            I'm building my <a href="https://valwade275.github.io/wiki/">my digital garden 🌱</a> here on GitHub.
-            <br><br>
-            Want to learn more about digital gardens? Read <a href="https://maggieappleton.com/garden-history">Maggie Appleton's essay</a>.
-            <br><br>
-            If you would like to learn more about my professional background, visit <a href="https://www.vcwade.com">my website</a>.
-            <br><br>
-            To see me tinker and play with code, visit <a href="https://github.com/valwade275">my GitHub profile</a>.
-        </p>
+        <h3>I'm an enthusiastic technical writer and project manager based in Houston, Texas.</h3>
+        <ul class="link-list">
+            <li>
+                I'm building my <a href="https://valwade275.github.io/wiki/">digital garden 🌱</a> here on GitHub. It is an ever-growing collection of ideas and notes on various topics.
+            </li>
+            <li>
+                Want to learn more about digital gardens? Read <a href="https://maggieappleton.com/garden-history">Maggie Appleton's essay</a>.
+            </li>
+            <li>
+                If you would like to learn more about my professional background, visit <a href="https://www.vcwade.com">my website</a>.
+            </li>
+            <li>
+                To see me tinker and play with code, visit <a href="https://github.com/valwade275">my GitHub profile</a>.
+            </li>
+        </ul>
     </main>
     <footer>
         <p>&copy; 2024 Valerie Wade. All rights reserved.</p>

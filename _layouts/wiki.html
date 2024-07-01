@@ -22,6 +22,25 @@
       color: #fff;
       padding: 1rem 0;
       text-align: center;
+      position: relative;
+    }
+    header .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header .nav-container {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      /* justify-content: flex-end; */
+      /*padding-right: 1rem; */
+      margin-top: 0.5rem;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      text-align: right;
     }
     main {
       padding: 2rem;
@@ -49,19 +68,78 @@
     a:hover {
       color: #555;
     }
+    .wiki-topics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .wiki-topics .topic {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    /* Columns and Boxes */
+    .w-100 {
+      width: 100%;
+    }
+
+    .cf:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .mb1 {
+      margin-bottom: 1rem;
+    }
+
+    .mt1 {
+      margin-top: 1rem;
+    }
+
+    .pr4-l {
+      padding-right: 4rem;
+    }
+
+    .link {
+      text-decoration: none;
+    }
+
+    .black {
+      color: black;
+    }
+
+    .bg-near-white {
+      background-color: #f4f4f4;
+    }
+
+    .pa3 {
+      padding: 1rem;
+    }
+
+    /* Flexbox centering */
+    .wiki-topics-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem; /* Add gap between items */
+    }
+
+    .wiki-topics-container .topic {
+      flex: 1 1 calc(33.3333% - 1rem); /* Adjust width and account for gap */
+      box-sizing: border-box; /* Ensure padding and border are included in the width */
+    }
   </style>
 </head>
 
 <body>
-  <!--<header>
-    <h1>Val's Wiki</h1>
-  </header>-->
+
   <main>
     {{ content }}
+
   </main>
-  <!--<footer>
-    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
-  </footer>-->
+
 </body>
 
 </html>
