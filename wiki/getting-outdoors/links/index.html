@@ -49,77 +49,82 @@
     a:hover {
         color: #555;
     }
-</style>
+    .content-container {
+        padding: 1rem; /* Add padding to the content container */
+    }
+    .breadcrumb {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .breadcrumb li {
+        margin-right: 0.5rem;
+    }
+    .breadcrumb li a {
+        color: #301934;
+        text-decoration: none;
+    }
+    .breadcrumb li a:hover {
+        text-decoration: underline;
+    }
+    .breadcrumb li::after {
+        content: "/";
+        margin-left: 0.5rem;
+    }
+    .breadcrumb li:last-child::after {
+        content: "";
+    }
+  </style>
 
 </head>
-
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Valerie’s GitHub Site | Valerie’s GitHub Home Page</title>
-<meta name="generator" content="Jekyll v3.9.5" />
-<meta property="og:title" content="Valerie’s GitHub Site" />
-<meta name="author" content="Valerie Wade" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Valerie’s GitHub Home Page" />
-<meta property="og:description" content="Valerie’s GitHub Home Page" />
-<meta property="og:site_name" content="Valerie’s GitHub Site" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Valerie’s GitHub Site" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Valerie Wade"},"description":"Valerie’s GitHub Home Page","headline":"Valerie’s GitHub Site","url":"/wiki/getting-outdoors/links/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <!--<link rel="stylesheet" href="/assets/css/style.css?v=a40b679343982687c9a4b22f4c52e056573c5d93">
-    <script src="/assets/js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <!--<h1 class="header">Valerie's GitHub Site</h1>
-        <p class="header">Valerie's GitHub Home Page
-</p>-->
-
-        <ul>
+<body>
+  <header>
+    <h1></h1>
+  </header>
+  <main>
+    <div class="content-container">
+      <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        
+        
+        
           
-          <!--<li><a class="buttons github" href="https://github.com/valwade275/valwade275.github.io">View On GitHub</a></li>-->
-        </ul>
-
-        <!--
-          <p class="header">This project is maintained by <a class="header name" href="https://github.com/valwade275">valwade275</a></p>
-        -->
-
+            
+            <li>
+              <a href="/"></a>
+            </li>
+          
         
-      </header>
-
-      <section>
+          
+            
+            <li>
+              <a href="/wiki/">Wiki</a>
+            </li>
+          
         
+          
+            
+            <li>
+              <a href="/wiki/getting-outdoors/">Getting-outdoors</a>
+            </li>
+          
+        
+          
+            
+            <li>
+              <a href="/wiki/getting-outdoors/links/">Links</a>
+            </li>
+          
+        
+      </ul>
+      
 
-      </section>
-
-      <footer>
-        <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
-      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+  </main>
+  <footer>
+    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+  </footer>
+</body>
 </html>

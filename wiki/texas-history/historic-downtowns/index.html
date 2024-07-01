@@ -49,70 +49,77 @@
     a:hover {
         color: #555;
     }
-</style>
+    .content-container {
+        padding: 1rem; /* Add padding to the content container */
+    }
+    .breadcrumb {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .breadcrumb li {
+        margin-right: 0.5rem;
+    }
+    .breadcrumb li a {
+        color: #301934;
+        text-decoration: none;
+    }
+    .breadcrumb li a:hover {
+        text-decoration: underline;
+    }
+    .breadcrumb li::after {
+        content: "/";
+        margin-left: 0.5rem;
+    }
+    .breadcrumb li:last-child::after {
+        content: "";
+    }
+  </style>
 
 </head>
-
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Historic Downtowns in Texas | Valerie’s GitHub Site</title>
-<meta name="generator" content="Jekyll v3.9.5" />
-<meta property="og:title" content="Historic Downtowns in Texas" />
-<meta name="author" content="Valerie Wade" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Valerie’s GitHub Home Page" />
-<meta property="og:description" content="Valerie’s GitHub Home Page" />
-<meta property="og:site_name" content="Valerie’s GitHub Site" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Historic Downtowns in Texas" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Valerie Wade"},"description":"Valerie’s GitHub Home Page","headline":"Historic Downtowns in Texas","url":"/wiki/texas-history/historic-downtowns/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <!--<link rel="stylesheet" href="/assets/css/style.css?v=a40b679343982687c9a4b22f4c52e056573c5d93">
-    <script src="/assets/js/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <!--<h1 class="header">Valerie's GitHub Site</h1>
-        <p class="header">Valerie's GitHub Home Page
-</p>-->
-
-        <ul>
-          
-          <!--<li><a class="buttons github" href="https://github.com/valwade275/valwade275.github.io">View On GitHub</a></li>-->
-        </ul>
-
-        <!--
-          <p class="header">This project is maintained by <a class="header name" href="https://github.com/valwade275">valwade275</a></p>
-        -->
-
+<body>
+  <header>
+    <h1>Historic Downtowns in Texas</h1>
+  </header>
+  <main>
+    <div class="content-container">
+      <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
         
-      </header>
-
-      <section>
-        <h1 id="historic-downtowns-in-texas">Historic Downtowns in Texas</h1>
+        
+        
+          
+            
+            <li>
+              <a href="/"></a>
+            </li>
+          
+        
+          
+            
+            <li>
+              <a href="/wiki/">Wiki</a>
+            </li>
+          
+        
+          
+            
+            <li>
+              <a href="/wiki/texas-history/">Texas-history</a>
+            </li>
+          
+        
+          
+            
+            <li>
+              <a href="/wiki/texas-history/historic-downtowns/">Historic-downtowns</a>
+            </li>
+          
+        
+      </ul>
+      <h1 id="historic-downtowns-in-texas">Historic Downtowns in Texas</h1>
 
 <p>One thing I’d like to do within the next year or so is to document some of the historic downtowns around Houston and throughout East Texas. Last year, I happened upon a really cool little bar in Old Humble. As long as I’ve lived here, I’ve never had a reason to explore that part of Humble, and I was really surprised that the historic main street was still (relatively) intact so close to Highway 59.</p>
 
@@ -120,12 +127,10 @@
 
 <p>Some of my fondest memories include walking around downtown Center, TX when I was a little girl. I remember seeing <a href="https://en.wikipedia.org/wiki/Dick_Tracy_(1990_film)">Dick Tracy</a> and <a href="https://en.wikipedia.org/wiki/The_Rocketeer_(film)">The Rocketeer</a> in the Rio Theater.</p>
 
-      </section>
-
-      <footer>
-        <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
-      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+  </main>
+  <footer>
+    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+  </footer>
+</body>
 </html>
