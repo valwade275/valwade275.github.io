@@ -49,57 +49,60 @@
     a:hover {
         color: #555;
     }
-</style>
+    .content-container {
+        padding: 1rem; /* Add padding to the content container */
+    }
+    .breadcrumb {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .breadcrumb li {
+        margin-right: 0.5rem;
+    }
+    .breadcrumb li a {
+        color: #301934;
+        text-decoration: none;
+    }
+    .breadcrumb li a:hover {
+        text-decoration: underline;
+    }
+    .breadcrumb li::after {
+        content: "/";
+        margin-left: 0.5rem;
+    }
+    .breadcrumb li:last-child::after {
+        content: "";
+    }
+  </style>
 
 </head>
-
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-{% seo %}
-    <!--<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <!--<h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>-->
-
-        <ul>
-          {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
-            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
+<body>
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <main>
+    <div class="content-container">
+      <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        {% assign path_parts = page.url | split: '/' %}
+        {% assign full_path = "" %}
+        {% for part in path_parts %}
+          {% if part %}
+            {% assign full_path = full_path | append: part | append: '/' %}
+            <li>
+              <a href="{{ full_path }}">{{ part | capitalize }}</a>
+            </li>
           {% endif %}
-          <!--<li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>-->
-        </ul>
-
-        <!--{% if site.github.is_project_page %}
-          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}-->
-
-        {% if site.github.is_user_page %}
-          <ul>
-            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-          </ul>
-        {% endif %}
-      </header>
-
-      <section>
-        {{ content }}
-      </section>
-
-      <footer>
-        <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
-      </footer>
+        {% endfor %}
+      </ul>
+      {{ content }}
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+  </main>
+  <footer>
+    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+  </footer>
+</body>
 </html>
