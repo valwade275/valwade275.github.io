@@ -22,6 +22,25 @@
       color: #fff;
       padding: 1rem 0;
       text-align: center;
+      position: relative;
+    }
+    header .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header .nav-container {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      /* justify-content: flex-end; */
+      /*padding-right: 1rem; */
+      margin-top: 0.5rem;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      text-align: right;
     }
     main {
       padding: 2rem;
@@ -49,33 +68,106 @@
     a:hover {
       color: #555;
     }
+    .wiki-topics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .wiki-topics .topic {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+    }
+    /* Columns and Boxes */
+    .w-100 {
+      width: 100%;
+    }
+
+    .cf:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .mb1 {
+      margin-bottom: 1rem;
+    }
+
+    .mt1 {
+      margin-top: 1rem;
+    }
+
+    .pr4-l {
+      padding-right: 4rem;
+    }
+
+    .link {
+      text-decoration: none;
+    }
+
+    .black {
+      color: black;
+    }
+
+    .bg-near-white {
+      background-color: #f4f4f4;
+    }
+
+    .pa3 {
+      padding: 1rem;
+    }
+
+    /* Flexbox centering */
+    .wiki-topics-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem; /* Add gap between items */
+    }
+
+    .wiki-topics-container .topic {
+      flex: 1 1 calc(33.3333% - 1rem); /* Adjust width and account for gap */
+      box-sizing: border-box; /* Ensure padding and border are included in the width */
+    }
   </style>
 </head>
 
 <body>
-  <!--<header>
-    <h1>Val's Wiki</h1>
-  </header>-->
+
   <main>
     <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<!--<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Val's Wiki</title>
   
-</head>
+</head>-->
 
 <body>
+ 
   <header>
-    <h1>Val's Wiki</h1>
+    <div class="nav-container">
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </div>
+    <div class="title">
+      <h1>Val's Wiki</h1>
+    </div>
   </header>
+
   <main>
     <h2 class="tc">Welcome!</h2>
     <p>This is my wiki and personal <a href="https://maggieappleton.com/garden-history">digital garden</a>. Feel free to wander. You'll find a collection of ideas and fragments of topics that interest me.</p>
     <h3>Wiki Topics</h3>
 
+    <section class="wiki-topics" id="wiki-topics">
+      <!-- Folder titles will be dynamically inserted here -->
+    </section>
+
   
   
 
@@ -83,46 +175,46 @@
 
   
 
-  <div class="w-100 cf">
+  <div class="wiki-topics-container">
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/animals/index.html"><div class="bg-near-white pa3">Animals</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/art/index.html"><div class="bg-near-white pa3">Art</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/books/index.html"><div class="bg-near-white pa3">Books</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/exercise/index.html"><div class="bg-near-white pa3">Exercise</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/fashion-history/index.html"><div class="bg-near-white pa3">Fashion-history</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/gardening/index.html"><div class="bg-near-white pa3">Gardening</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/getting-outdoors/index.html"><div class="bg-near-white pa3">Getting-outdoors</div></a>
         </div>
       
@@ -130,25 +222,25 @@
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/music/index.html"><div class="bg-near-white pa3">Music</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/poetry/index.html"><div class="bg-near-white pa3">Poetry</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/technical-writing/index.html"><div class="bg-near-white pa3">Technical-writing</div></a>
         </div>
       
     
       
-        <div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+        <div class="topic">
           <a class="link black" href="/wiki/texas-history/index.html"><div class="bg-near-white pa3">Texas-history</div></a>
         </div>
       
@@ -159,19 +251,28 @@
 
   
   
+    <a href="/wiki/animals/">wiki/animals/index.html</a>
+    <br>
+  
     <a href="/wiki/animals/links/">wiki/animals/links.md</a>
+    <br>
+  
+    <a href="/wiki/art/">wiki/art/index.html</a>
     <br>
   
     <a href="/wiki/art/links/">wiki/art/links.md</a>
     <br>
   
+    <a href="/wiki/books/">wiki/books/index.html</a>
+    <br>
+  
     <a href="/wiki/books/links/">wiki/books/links.md</a>
     <br>
   
-    <a href="/wiki/exercise/links/">wiki/exercise/links.md</a>
+    <a href="/wiki/exercise/">wiki/exercise/index.html</a>
     <br>
   
-    <a href="/wiki/fashion-history/2024-06-30%2002.03.52/">wiki/fashion-history/2024-06-30 02.03.52.md</a>
+    <a href="/wiki/exercise/links/">wiki/exercise/links.md</a>
     <br>
   
     <a href="/wiki/fashion-history/">wiki/fashion-history/index.html</a>
@@ -180,7 +281,16 @@
     <a href="/wiki/fashion-history/links/">wiki/fashion-history/links.md</a>
     <br>
   
+    <a href="/wiki/fashion-history/zelda-wynn-valdes/">wiki/fashion-history/zelda-wynn-valdes.md</a>
+    <br>
+  
+    <a href="/wiki/gardening/">wiki/gardening/index.html</a>
+    <br>
+  
     <a href="/wiki/gardening/links/">wiki/gardening/links.md</a>
+    <br>
+  
+    <a href="/wiki/getting-outdoors/">wiki/getting-outdoors/index.html</a>
     <br>
   
     <a href="/wiki/getting-outdoors/links/">wiki/getting-outdoors/links.md</a>
@@ -189,7 +299,13 @@
     <a href="/wiki/">wiki/index.html</a>
     <br>
   
+    <a href="/wiki/music/">wiki/music/index.html</a>
+    <br>
+  
     <a href="/wiki/music/links/">wiki/music/links.md</a>
+    <br>
+  
+    <a href="/wiki/poetry/">wiki/poetry/index.html</a>
     <br>
   
     <a href="/wiki/poetry/links/">wiki/poetry/links.md</a>
@@ -213,6 +329,29 @@
 
   </main>
   
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('listings.json')
+        .then(response => response.json())
+        .then(data => {
+          const topicsContainer = document.getElementById('wiki-topics');
+          data.forEach(item => {
+            const topicDiv = document.createElement('div');
+            topicDiv.className = 'topic';
+
+            const topicLink = document.createElement('a');
+            topicLink.href = item.url;
+            topicLink.textContent = item.title;
+            topicLink.className = 'link black';
+
+            topicDiv.appendChild(topicLink);
+            topicsContainer.appendChild(topicDiv);
+          });
+        })
+        .catch(error => console.error('Error fetching the listings:', error));
+    });
+  </script>
+
   <footer>
     <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
   </footer>
@@ -220,10 +359,9 @@
 
 </html>
 
+
   </main>
-  <!--<footer>
-    <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
-  </footer>-->
+
 </body>
 
 </html>

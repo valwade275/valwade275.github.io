@@ -9,6 +9,7 @@
     /* Include your CSS styles here */
     ul {
       list-style-type: none;
+      padding: 0;
     }
     body {
       font-family: Arial, sans-serif;
@@ -69,6 +70,9 @@
     main h2, main h3 {
       text-align: center;
     }
+    .left-align {
+      text-align: left; /* New class for left alignment */
+    }
     footer {
       text-align: center;
       padding: 1rem 0;
@@ -104,31 +108,46 @@
         <li><a href="/">Home</a></li>
         
         
+        
           
+            
             <li>
-              <a href="//"></a>
+              <a href="/"></a>
             </li>
           
         
           
+            
             <li>
               <a href="/wiki/">Wiki</a>
             </li>
           
         
           
+            
             <li>
-              <a href="/technical-writing/">Technical-writing</a>
+              <a href="/wiki/technical-writing/">Technical-writing</a>
             </li>
           
         
       </ul>
-      <h2>Files in Technical Writing</h2>
+      <h2>Wiki Folder: Technical Writing</h2>
       <p>Musings and thoughts on technical writing, tools, and philosophies.</p> <!-- Centered content -->
-      <ul>
-        
-        
-      </ul>
+      <div class="left-align">
+        <ul>
+          
+          
+          
+            
+              <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
+              <li><a href="/technical-writing/index.html" target="_blank">index.html</a></li>
+            
+              <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
+              <li><a href="/technical-writing/links.html" target="_blank">links.md</a></li>
+            
+          
+        </ul>
+      </div>
     </div>
   </main>
   <footer>
