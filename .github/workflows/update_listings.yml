@@ -16,13 +16,15 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0' # Specify the Ruby version you need
+        ruby-version: '3.0' # or the version you need
 
     - name: Install dependencies
       run: bundle install
 
     - name: Generate listings
       run: ruby generate_listings.rb
+      env:
+        WIKI_DIR: './wiki' # Set the environment variable to the correct path
 
     - name: Commit and push changes
       run: |
