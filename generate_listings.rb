@@ -1,10 +1,19 @@
 require 'json'
 require 'fileutils'
-require 'yaml'  # Add this line to include the YAML module
+require 'yaml' # Add this line to include the YAML module
 
 # Load Jekyll configuration to get the directory to list
 config = YAML.load_file('_config.yml')
 directory_to_list = config['directory_to_list']
+
+# Use an environment variable or default to the directory from the config
+directory_to_list = ENV['WIKI_DIR'] || directory_to_list
+
+# Ensure the directory exists
+unless Dir.exist?(directory_to_list)
+  puts "Directory does not exist: #{directory_to_list}"
+  exit 1
+end
 
 # Function to generate listings recursively
 def generate_listings(dir, base_path = '')
