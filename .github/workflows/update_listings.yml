@@ -1,0 +1,35 @@
+name: Update Listings
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-listings:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.7' # Specify the Ruby version you need
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Generate listings
+      run: ruby generate_listings.rb
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add _data/listings.json
+        git commit -m 'Update listings.json'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
