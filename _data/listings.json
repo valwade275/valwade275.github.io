@@ -1,26 +1,6 @@
 {
   "folders": [
     {
-      "name": "animals",
-      "path": "/animals",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "index.html",
-            "path": "/animals/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/animals/links.md"
-          }
-        ],
-        "path": "/animals"
-      }
-    },
-    {
       "name": "art",
       "path": "/art",
       "listings": {
@@ -41,6 +21,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "name": "books",
       "path": "/books",
       "listings": {
@@ -133,6 +114,8 @@
       }
     },
     {
+=======
+>>>>>>> 85bdbc971262b9b399a8468b7eeefe159be72f4f
       "name": "getting-outdoors",
       "path": "/getting-outdoors",
       "listings": {
@@ -153,8 +136,8 @@
       }
     },
     {
-      "name": "music",
-      "path": "/music",
+      "name": "books",
+      "path": "/books",
       "listings": {
         "folders": [
 
@@ -162,14 +145,14 @@
         "files": [
           {
             "name": "index.html",
-            "path": "/music/index.html"
+            "path": "/books/index.html"
           },
           {
             "name": "links.md",
-            "path": "/music/links.md"
+            "path": "/books/links.md"
           }
         ],
-        "path": "/music"
+        "path": "/books"
       }
     },
     {
@@ -193,6 +176,26 @@
       }
     },
     {
+      "name": "exercise",
+      "path": "/exercise",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "/exercise/index.html"
+          },
+          {
+            "name": "links.md",
+            "path": "/exercise/links.md"
+          }
+        ],
+        "path": "/exercise"
+      }
+    },
+    {
       "name": "poetry",
       "path": "/poetry",
       "listings": {
@@ -213,8 +216,8 @@
       }
     },
     {
-      "name": "technical-writing",
-      "path": "/technical-writing",
+      "name": "music",
+      "path": "/music",
       "listings": {
         "folders": [
 
@@ -222,14 +225,86 @@
         "files": [
           {
             "name": "index.html",
-            "path": "/technical-writing/index.html"
+            "path": "/music/index.html"
           },
           {
             "name": "links.md",
-            "path": "/technical-writing/links.md"
+            "path": "/music/links.md"
           }
         ],
-        "path": "/technical-writing"
+        "path": "/music"
+      }
+    },
+    {
+      "name": "animals",
+      "path": "/animals",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "/animals/index.html"
+          },
+          {
+            "name": "links.md",
+            "path": "/animals/links.md"
+          }
+        ],
+        "path": "/animals"
+      }
+    },
+    {
+      "name": "gardening",
+      "path": "/gardening",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "FireCider.md",
+            "path": "/gardening/FireCider.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/gardening/index.html"
+          },
+          {
+            "name": "FermentedHoney.md",
+            "path": "/gardening/FermentedHoney.md"
+          },
+          {
+            "name": "links.md",
+            "path": "/gardening/links.md"
+          }
+        ],
+        "path": "/gardening"
+      }
+    },
+    {
+      "name": "fashion-history",
+      "path": "/fashion-history",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "/fashion-history/index.html"
+          },
+          {
+            "name": "zelda-wynn-valdes1.md",
+            "path": "/fashion-history/zelda-wynn-valdes1.md"
+          },
+          {
+            "name": "links.md",
+            "path": "/fashion-history/links.md"
+          }
+        ],
+        "path": "/fashion-history"
       }
     },
     {
@@ -254,6 +329,26 @@
           }
         ],
         "path": "/texas-history"
+      }
+    },
+    {
+      "name": "technical-writing",
+      "path": "/technical-writing",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "/technical-writing/index.html"
+          },
+          {
+            "name": "links.md",
+            "path": "/technical-writing/links.md"
+          }
+        ],
+        "path": "/technical-writing"
       }
     }
   ],
