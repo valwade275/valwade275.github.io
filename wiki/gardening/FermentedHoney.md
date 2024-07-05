@@ -1,7 +1,11 @@
-# Fermented Honey as a Preservation Method
-### July 2024
+---
+title: Fermented Honey
+--- 
 
-I have an abundance of jalapeno peppers from this season's harvest. I've cooked with a few (they've been delicious on pizza), but there's only so much spice I feel like tasting when it's 95 degrees + 95% humidity outside. So I think it's a good idea to make something versatile and long-lasting with them. Fermented honey is also closely related to [fire cider](gardening/FireCider.md), so I'll probably start both at the same time since I'll be chopping things anyway. 
+# Fermented Honey as a Preservation Method
+##### July 2024
+
+I have an abundance of jalapeno peppers from this season's harvest. I've cooked with a few (they've been delicious on pizza), but there's only so much spice I feel like tasting when it's 95 degrees + 95% humidity outside. So I think it's a good idea to make something versatile and long-lasting with them. Fermented honey is also closely related to [fire cider](./FireCider.md), so I'll probably start both at the same time since I'll be chopping things anyway. 
 
 ## Why Fermented Honey?
 - Fermented foods have plenty of health benefits. 

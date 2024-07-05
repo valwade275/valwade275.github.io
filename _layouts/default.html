@@ -81,7 +81,7 @@
 </head>
 <body>
   <header>
-    <h1>{{ page.title }}</h1>
+    <h2>Wiki Page: {{ page.title }}</h2>
   </header>
   <main>
     <div class="content-container">
@@ -93,12 +93,12 @@
           {% if part %}
             {% assign full_path = full_path | append: part | append: '/' %}
             <li>
-              <a href="{{ full_path }}">{{ part | capitalize }}</a>
+              <a href="{{ full_path | replace: '.md', '' }}">{{ part | capitalize }}</a>
             </li>
           {% endif %}
         {% endfor %}
       </ul>
-      {{ content }}
+      {{ content | replace: '.md', '' }}
     </div>
   </main>
   <footer>

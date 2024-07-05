@@ -113,6 +113,14 @@
         ],
         "files": [
           {
+            "name": "FermentedHoney.md",
+            "path": "/gardening/FermentedHoney.md"
+          },
+          {
+            "name": "FireCider.md",
+            "path": "/gardening/FireCider.md"
+          },
+          {
             "name": "index.html",
             "path": "/gardening/index.html"
           },
