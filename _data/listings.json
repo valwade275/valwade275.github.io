@@ -21,6 +21,26 @@
       }
     },
     {
+      "name": "stay-ready",
+      "path": "/stay-ready",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/stay-ready/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/stay-ready/index.html"
+          }
+        ],
+        "path": "/stay-ready"
+      }
+    },
+    {
       "name": "getting-outdoors",
       "path": "/getting-outdoors",
       "listings": {
