@@ -227,6 +227,10 @@
           {
             "name": "links.md",
             "path": "/stay-ready/links.md"
+          },
+          {
+            "name": "my-reminders.md",
+            "path": "/stay-ready/my-reminders.md"
           }
         ],
         "path": "/stay-ready"
