@@ -52,8 +52,14 @@ title: Val's Wiki
   {% assign wikifolders = "" | split:"" %}
 
   {% for folder in folders %}
-    {% assign tempvar = folder.path | split:"/" %}
-    {% assign wikifolders = wikifolders | push:tempvar[1] %}
+    {% if folder.path %}
+      {% assign tempvar = folder.path | split:"/" %}
+      {% if tempvar.size > 1 %}
+        {% assign wikifolders = wikifolders | push:tempvar[1] %}
+      {% endif %}
+    {% else %}
+      <p>Folder path is nil for item: {{ folder }}</p>
+    {% endif %}
   {% endfor %}
 
   {% assign wikifolders = wikifolders | uniq | sort %}
