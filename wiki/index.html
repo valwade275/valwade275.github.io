@@ -84,6 +84,25 @@ title: Val's Wiki
 
   </main>
   
+  <style>
+    .wiki-topics-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .topic {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .topic a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+  
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       fetch('listings.json')
