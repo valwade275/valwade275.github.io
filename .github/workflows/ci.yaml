@@ -16,6 +16,8 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.3.3
+        bundler-cache: true
+        bundler-version: 2.5.14  # Specify the Bundler version here
 
     - name: Install dependencies
       run: bundle install
