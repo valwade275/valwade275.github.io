@@ -107,33 +107,193 @@
       </ul>
       <h1 id="documentation-for-vals-wiki">Documentation for Val’s Wiki</h1>
 
-<p>For such a simple concept, there’s a fair amount of activity going on under the hood of my wiki/digital garden. This documentation should help readers understand how I built this project.</p>
+<p><em>For such a simple concept, there’s a fair amount of activity going on under the hood of my wiki/digital garden. This documentation should help readers understand how I built this site. I focused on simplicity so that people without lots of coding experience can replicate my setup for their own digital gardents.</em></p>
 
 <h1 id="github-workflows">GitHub Workflows</h1>
 
+<h2 id="github-pages-deployment">GitHub Pages Deployment</h2>
+<ul>
+  <li>Filepath: .github/workflows/ci.yaml</li>
+</ul>
+
+<p>This file is a GitHub Actions workflow configuration for deploying a Jekyll site to GitHub Pages. This workflow automates the process of building and deploying a Jekyll site to GitHub Pages whenever changes are pushed to the main branch.</p>
+
+<ol>
+  <li>
+    <p><strong>Trigger</strong>: The workflow is triggered by a push to the <code class="language-plaintext highlighter-rouge">main</code> branch.</p>
+  </li>
+  <li>
+    <p><strong>Job Definition</strong>:<br />
+ Job Name: build<br />
+ Runner: ubuntu-latest</p>
+  </li>
+  <li>
+    <p><strong>Job Steps</strong>:<br />
+ A. Check Out Code: Uses the <code class="language-plaintext highlighter-rouge">actions/checkout@v2</code> action to check out the repository code.</p>
+
+    <p>B. Set up Ruby: Uses the <code class="language-plaintext highlighter-rouge">ruby/setup-ruby@v1</code> action to set up Ruby version x.y.z. Caches the Bundler dependencies and specifies Bundler version a.b.c.</p>
+
+    <p>C. Install Dependencies: Runs <code class="language-plaintext highlighter-rouge">bundle install</code> to install the required Ruby gems.</p>
+
+    <p>D. Build Site: Runs <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> to build the Jekyll site.</p>
+
+    <p>E. Deploy to GitHub Pages: Uses the <code class="language-plaintext highlighter-rouge">peaceiris/actions-gh-pages@v3</code> action to deploy the built site to the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch. Uses the <code class="language-plaintext highlighter-rouge">GITHUB_TOKEN</code> secret for authentication and specifies the directory containing the built site (./_site).</p>
+  </li>
+</ol>
+
+<h2 id="update-listings">Update Listings</h2>
+<ul>
+  <li>Filepath: .github/workflows/update_listings.yml</li>
+</ul>
+
+<p>This file is a GitHub Actions workflow configuration for updating listings in a repository. This workflow automates the process of generating and committing updates to <code class="language-plaintext highlighter-rouge">_data/listings.json</code> in the repository whenever changes are pushed to the <code class="language-plaintext highlighter-rouge">main</code> branch. With this workflow, I do not have to manually add wiki folders and files to <code class="language-plaintext highlighter-rouge">_data/listings.json</code> whenever I create wiki entries.</p>
+
+<ol>
+  <li>
+    <p><strong>Trigger</strong>: The workflow is triggered by a push to the <code class="language-plaintext highlighter-rouge">main</code> branch.</p>
+  </li>
+  <li>
+    <p><strong>Job Definition</strong>:<br />
+ Job Name: update-listings<br />
+ Runner: ubuntu-latest</p>
+  </li>
+  <li>
+    <p><strong>Job Steps</strong>:
+ A. Check Out Code: Uses the <code class="language-plaintext highlighter-rouge">actions/checkout@v2</code> action to check out the repository code.</p>
+
+    <p>B. Set up Ruby: Uses the <code class="language-plaintext highlighter-rouge">ruby/setup-ruby@v1</code> action to set up Ruby version x.y.z.</p>
+
+    <p>C. Install Dependencies: Runs <code class="language-plaintext highlighter-rouge">bundle install</code> to install the required Ruby gems.</p>
+
+    <p>D. Generate Listings:<br />
+     - Runs <code class="language-plaintext highlighter-rouge">ruby generate_listings.rb</code> to generate the listings.
+     - Sets an environment variable <code class="language-plaintext highlighter-rouge">WIKI_DIR</code> to the correct path (./wiki).</p>
+
+    <p>E. Commit and Push Changes:
+     - Configures the GitHub Actions bot with a global Git username and email.
+     - Checks if there are any changes in the repository.<br />
+     - If changes are present:<br />
+         - Adds <code class="language-plaintext highlighter-rouge">_data/listings.json</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> to the Git index.<br />
+         - Commits the changes with a message ‘Update listings.json and Gemfile.lock’.<br />
+         - Pushes the changes to the repository.<br />
+     - If no changes are present, outputs a message “No changes to commit”.<br />
+     - Uses the <code class="language-plaintext highlighter-rouge">GITHUB_TOKEN</code> secret for authentication.</p>
+  </li>
+</ol>
+
 <h1 id="automation-updating-folders--files">Automation: Updating Folders &amp; Files</h1>
+
+<h2 id="generate-listings">Generate Listings</h2>
+<ul>
+  <li>File: generate_listings.rb</li>
+</ul>
+
+<p>This Ruby script generates a JSON listing of files and directories within a specified directory (the <code class="language-plaintext highlighter-rouge">wiki</code> directory). This helps create navigational elements for the wiki.</p>
+
+<ol>
+  <li><strong>Imports Required Libraries</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">json</code> for JSON manipulation.</li>
+      <li><code class="language-plaintext highlighter-rouge">fileutils</code> for file and directory operations.</li>
+      <li><code class="language-plaintext highlighter-rouge">yaml</code> for reading YAML configuration files.</li>
+    </ul>
+  </li>
+  <li><strong>Load Configuration</strong>:
+    <ul>
+      <li>Reads the <code class="language-plaintext highlighter-rouge">_config.yml</code> file to get the directory to list.</li>
+      <li>Retrieves the directory from the <code class="language-plaintext highlighter-rouge">directory_to_list</code> key in the configuration file.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Set Directory to List</strong>: Uses an environment variable <code class="language-plaintext highlighter-rouge">WIKI_DIR</code> if it is set; otherwise, defaults to the directory specified in the configuration file.</p>
+  </li>
+  <li>
+    <p><strong>Check Directory Existence</strong>: Verifies that the specified directory exists. If not, it prints an error message and exits.</p>
+  </li>
+  <li><strong>Generate Listings Function</strong>: Defines a recursive function <code class="language-plaintext highlighter-rouge">generate_listings</code> that creates a nested structure of folders and files:
+    <ul>
+      <li>Folders: Contains subfolders and their respective listings.</li>
+      <li>Files: Contains file names and paths within the directory.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Ensure Data Directory Exists</strong>: Ensures that the <code class="language-plaintext highlighter-rouge">_data</code> directory exists and creates it if necessary.</p>
+  </li>
+  <li>
+    <p><strong>Generate Listings</strong>: Calls the <code class="language-plaintext highlighter-rouge">generate_listings</code> function on the specified directory to create a nested listing.</p>
+  </li>
+  <li><strong>Write Listings to JSON</strong>: Writes the generated listings to the <code class="language-plaintext highlighter-rouge">listings.json</code> file in the <code class="language-plaintext highlighter-rouge">_data</code> directory using pretty-printed JSON format.</li>
+</ol>
+
+<h2 id="wiki-home-page">Wiki Home Page</h2>
+<ul>
+  <li>Filepath: wiki/index.html</li>
+</ul>
+
+<p>The automation within this file creates a section of the home page for displaying wiki topics (folders) dynamically. I do not have to manually update this file each time I add or remove a wiki folder. This automation includes the following elements:</p>
+<ul>
+  <li><strong>JavaScript</strong>: A script to fetch and display listings from <code class="language-plaintext highlighter-rouge">listings.json</code> within the <code class="language-plaintext highlighter-rouge">#wiki-topics</code> section.</li>
+  <li><strong>Liquid</strong>: Template code that involves four main tasks.
+    <ul>
+      <li>Assigns all pages containing “wiki” in their path to a <code class="language-plaintext highlighter-rouge">folders</code> variable.</li>
+      <li>Processes the folder paths to create a unique, sorted list of wiki folders (<code class="language-plaintext highlighter-rouge">wikifolders</code>).</li>
+      <li>Dynamically generates links to each wiki folder, excluding markdown and HTML files.</li>
+      <li>Lists all notes in the wiki at the end of the home page.</li>
+    </ul>
+  </li>
+  <li><strong>CSS</strong>: Styles for the <code class="language-plaintext highlighter-rouge">wiki topics</code> container, making it a three-column grid with borders and padding.</li>
+</ul>
 
 <h1 id="includes">Includes</h1>
 
+<p>The <code class="language-plaintext highlighter-rouge">_includes</code> directory contains small HTML files that can be inserted into layouts. Most of the include files for my wiki are based on the <em>Minima</em> theme. <a href="https://github.com/jekyll/minima/blob/master/README#includes">You can read about them here</a>.</p>
+
 <h1 id="layouts">Layouts</h1>
+
+<p>The <code class="language-plaintext highlighter-rouge">_layouts</code> directory contains HTML files that dictate the organization of information and appearance of various wiki pages. Some layout files include CSS styling. A few layout files are standards for the <em>Minima</em> theme, and others are drafts for future wiki ideas. The primary layout files for my wiki are provided below:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">default.html</code>: Defines the layout for wiki entries and links pages within specific wiki folders.</li>
+  <li><code class="language-plaintext highlighter-rouge">folder.html</code>: Defines the layout for the index pages for specific wiki folders.</li>
+  <li><code class="language-plaintext highlighter-rouge">wiki.html</code>: Defines the layout for the main wiki page (wiki/index.html).</li>
+</ul>
 
 <h1 id="wiki-structure">Wiki Structure</h1>
 
-<h2 id="wiki-index-file">Wiki Index File</h2>
-
-<h2 id="wiki-folders">Wiki Folders</h2>
-
-<h3 id="wiki-folder-index-file">Wiki Folder Index File</h3>
+<p>Wiki<br />
+|– Wiki Index<br />
+|<br />
+|– Wiki Folders (Topics)<br />
+|    |<br />
+|    |– Folder 1<br />
+|    |    |– Wiki Folder Index<br />
+|    |    |– Note 1.1<br />
+|    |    |– Note 1.2<br />
+|    |    |– Links<br />
+|    |<br />
+|    |– Folder 2<br />
+|    |    |– Wiki Folder Index<br />
+|    |    |– Note 2.1<br />
+|    |    |– Note 2.2<br />
+|    |    |– Links</p>
 
 <h3 id="wiki-folder-contents">Wiki Folder Contents</h3>
 
 <ul>
-  <li>Notes</li>
-  <li>Links</li>
-  <li>Snippets</li>
+  <li><strong>Index</strong>: Functions as the home page for each folder. It contains a summary of the folder contents and a list of that folder’s files.</li>
+  <li><strong>Notes</strong>: Markdown files that serve as wiki entries.</li>
+  <li><strong>Links</strong>: A list of websites related to that folder’s topic.</li>
+  <li><strong>Snippets</strong>: Images and other media related to that folder’s topic.</li>
 </ul>
 
-<h1 id="config">Config</h1>
+<h1 id="static-site">Static Site</h1>
+<p>When I am tinkering with my GitHub site locally, I use <a href="https://jekyllrb.com/docs/">Jekyll</a> to preview my work. Here are the commands I use to update my <code class="language-plaintext highlighter-rouge">listings.json</code> file and to build my static site:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby generate_listings.rb
+bundle exec jekyll build
+bundle exec jekyll serve
+</code></pre></div></div>
+<p>Once the site is built and available on my local server, I navigate to http://localhost:4000/ to view it.</p>
 
     </div>
   </main>
