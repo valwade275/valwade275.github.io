@@ -1,6 +1,6 @@
 # Documentation for Val's Wiki
 
-_For such a simple concept, there's a fair amount of activity going on under the hood of my wiki/digital garden. This documentation should help readers understand how I built this site. I focused on simplicity so that people without lots of coding experience can replicate my setup for their own digital gardents._  
+_For such a simple concept, there's a fair amount of activity going on under the hood of my wiki/digital garden. This documentation should help readers understand how I built this site. I focused on simplicity so that people without lots of coding experience can replicate my setup for their own digital gardens._  
 
 # GitHub Workflows
 
@@ -37,7 +37,7 @@ This file is a GitHub Actions workflow configuration for updating listings in a 
     Job Name: update-listings  
     Runner: ubuntu-latest  
 
-3. **Job Steps**:
+3. **Job Steps**:  
     A. Check Out Code: Uses the `actions/checkout@v2` action to check out the repository code.
 
     B. Set up Ruby: Uses the `ruby/setup-ruby@v1` action to set up Ruby version x.y.z.
@@ -45,16 +45,16 @@ This file is a GitHub Actions workflow configuration for updating listings in a 
     C. Install Dependencies: Runs `bundle install` to install the required Ruby gems.
 
     D. Generate Listings:  
-        - Runs `ruby generate_listings.rb` to generate the listings.
+        - Runs `ruby generate_listings.rb` to generate the listings.  
         - Sets an environment variable `WIKI_DIR` to the correct path (./wiki).  
 
-    E. Commit and Push Changes:
-        - Configures the GitHub Actions bot with a global Git username and email.
+    E. Commit and Push Changes:  
+        - Configures the GitHub Actions bot with a global Git username and email.  
         - Checks if there are any changes in the repository.  
         - If changes are present:  
-            - Adds `_data/listings.json` and `Gemfile.lock` to the Git index.  
-            - Commits the changes with a message 'Update listings.json and Gemfile.lock'.  
-            - Pushes the changes to the repository.  
+                - Adds `_data/listings.json` and `Gemfile.lock` to the Git index.  
+                - Commits the changes with a message 'Update listings.json and Gemfile.lock'.  
+                - Pushes the changes to the repository.  
         - If no changes are present, outputs a message "No changes to commit".  
         - Uses the `GITHUB_TOKEN` secret for authentication.  
 

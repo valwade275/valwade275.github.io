@@ -107,7 +107,7 @@
       </ul>
       <h1 id="documentation-for-vals-wiki">Documentation for Val’s Wiki</h1>
 
-<p><em>For such a simple concept, there’s a fair amount of activity going on under the hood of my wiki/digital garden. This documentation should help readers understand how I built this site. I focused on simplicity so that people without lots of coding experience can replicate my setup for their own digital gardents.</em></p>
+<p><em>For such a simple concept, there’s a fair amount of activity going on under the hood of my wiki/digital garden. This documentation should help readers understand how I built this site. I focused on simplicity so that people without lots of coding experience can replicate my setup for their own digital gardens.</em></p>
 
 <h1 id="github-workflows">GitHub Workflows</h1>
 
@@ -158,7 +158,7 @@
  Runner: ubuntu-latest</p>
   </li>
   <li>
-    <p><strong>Job Steps</strong>:
+    <p><strong>Job Steps</strong>:<br />
  A. Check Out Code: Uses the <code class="language-plaintext highlighter-rouge">actions/checkout@v2</code> action to check out the repository code.</p>
 
     <p>B. Set up Ruby: Uses the <code class="language-plaintext highlighter-rouge">ruby/setup-ruby@v1</code> action to set up Ruby version x.y.z.</p>
@@ -166,16 +166,16 @@
     <p>C. Install Dependencies: Runs <code class="language-plaintext highlighter-rouge">bundle install</code> to install the required Ruby gems.</p>
 
     <p>D. Generate Listings:<br />
-     - Runs <code class="language-plaintext highlighter-rouge">ruby generate_listings.rb</code> to generate the listings.
+     - Runs <code class="language-plaintext highlighter-rouge">ruby generate_listings.rb</code> to generate the listings.<br />
      - Sets an environment variable <code class="language-plaintext highlighter-rouge">WIKI_DIR</code> to the correct path (./wiki).</p>
 
-    <p>E. Commit and Push Changes:
-     - Configures the GitHub Actions bot with a global Git username and email.
+    <p>E. Commit and Push Changes:<br />
+     - Configures the GitHub Actions bot with a global Git username and email.<br />
      - Checks if there are any changes in the repository.<br />
      - If changes are present:<br />
-         - Adds <code class="language-plaintext highlighter-rouge">_data/listings.json</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> to the Git index.<br />
-         - Commits the changes with a message ‘Update listings.json and Gemfile.lock’.<br />
-         - Pushes the changes to the repository.<br />
+             - Adds <code class="language-plaintext highlighter-rouge">_data/listings.json</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> to the Git index.<br />
+             - Commits the changes with a message ‘Update listings.json and Gemfile.lock’.<br />
+             - Pushes the changes to the repository.<br />
      - If no changes are present, outputs a message “No changes to commit”.<br />
      - Uses the <code class="language-plaintext highlighter-rouge">GITHUB_TOKEN</code> secret for authentication.</p>
   </li>
