@@ -21,14 +21,20 @@
       }
     },
     {
+<<<<<<< HEAD
       "name": "art",
       "path": "/art",
+=======
+      "name": "stay-ready",
+      "path": "/stay-ready",
+>>>>>>> 423055fbecaf6ae13bed162f0761fb98ff179fb2
       "listings": {
         "folders": [
 
         ],
         "files": [
           {
+<<<<<<< HEAD
             "name": "index.html",
             "path": "/art/index.html"
           },
@@ -130,6 +136,17 @@
           }
         ],
         "path": "/gardening"
+=======
+            "name": "links.md",
+            "path": "/stay-ready/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/stay-ready/index.html"
+          }
+        ],
+        "path": "/stay-ready"
+>>>>>>> 423055fbecaf6ae13bed162f0761fb98ff179fb2
       }
     },
     {
