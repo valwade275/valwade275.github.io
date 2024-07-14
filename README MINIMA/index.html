@@ -81,7 +81,7 @@
 </head>
 <body>
   <header>
-    <h1></h1>
+    <h2>Wiki Page: </h2>
   </header>
   <main>
     <div class="content-container">
@@ -107,8 +107,8 @@
       </ul>
       <div align="center">
   <p><em><strong>Disclaimer:</strong> The information here may vary depending on the version you're using.<br />
-  Please refer to the <code>README.md</code> bundled within the theme-gem for information specific to your version or by pointing
-  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md.<br />
+  Please refer to the <code>README</code> bundled within the theme-gem for information specific to your version or by pointing
+  your browser to the Git tag corresponding to your version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.<br />
   Running <code>bundle show minima</code> will provide you with the local path to your current theme version.</em></p>
   <img src="/readme_banner.svg" />
   <p>It's Jekyll's default (and first) theme. It's what you get when you run <code>jekyll new</code>.</p>
@@ -302,7 +302,7 @@ contents into this file at the line that says ` &lt;h2 id="head"&gt;HEAD&lt;/h2&
 <h3 id="documentation-1">Documentation</h3>
 
 <ul>
-  <li>Improve thw wording in index.md (#175)</li>
+  <li>Improve thw wording in index (#175)</li>
   <li>Update config description comment (#203)</li>
 </ul>
 
@@ -380,7 +380,7 @@ contents into this file at the line that says ` &lt;h2 id="head"&gt;HEAD&lt;/h2&
 <ul>
   <li>Update gemspec to require at least Jekyll 3.3 (#59)</li>
   <li>Use <code class="language-plaintext highlighter-rouge">absolute_url</code> filter for disqus (#66)</li>
-  <li>replace <code class="language-plaintext highlighter-rouge">example/index.html</code> with <code class="language-plaintext highlighter-rouge">example/index.md</code> (#58)</li>
+  <li>replace <code class="language-plaintext highlighter-rouge">example/index.html</code> with <code class="language-plaintext highlighter-rouge">example/index</code> (#58)</li>
 </ul>
 
 <h3 id="development-fixes-3">Development Fixes</h3>
@@ -665,7 +665,7 @@ layout: base
 &lt;h3 id="documentation-1"&gt;Documentation&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Improve thw wording in index.md (#175)&lt;/li&gt;
+  &lt;li&gt;Improve thw wording in index (#175)&lt;/li&gt;
   &lt;li&gt;Update config description comment (#203)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -743,7 +743,7 @@ layout: base
 &lt;ul&gt;
   &lt;li&gt;Update gemspec to require at least Jekyll 3.3 (#59)&lt;/li&gt;
   &lt;li&gt;Use &lt;code class="language-plaintext highlighter-rouge"&gt;absolute_url&lt;/code&gt; filter for disqus (#66)&lt;/li&gt;
-  &lt;li&gt;replace &lt;code class="language-plaintext highlighter-rouge"&gt;example/index.html&lt;/code&gt; with &lt;code class="language-plaintext highlighter-rouge"&gt;example/index.md&lt;/code&gt; (#58)&lt;/li&gt;
+  &lt;li&gt;replace &lt;code class="language-plaintext highlighter-rouge"&gt;example/index.html&lt;/code&gt; with &lt;code class="language-plaintext highlighter-rouge"&gt;example/index&lt;/code&gt; (#58)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id="development-fixes-3"&gt;Development Fixes&lt;/h3&gt;
@@ -849,7 +849,7 @@ layout: base
 
 <h5 id="main-heading-and-content-injection"><em>Main Heading and Content-injection</em></h5>
 
-<p>From Minima v2.2 onwards, the <em>home</em> layout will inject all content from your <code class="language-plaintext highlighter-rouge">index.md</code> / <code class="language-plaintext highlighter-rouge">index.html</code> <strong>before</strong> the <strong><code class="language-plaintext highlighter-rouge">Posts</code></strong> heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. <em>We recommended that you title this section with a Heading2 (<code class="language-plaintext highlighter-rouge">##</code>)</em>.</p>
+<p>From Minima v2.2 onwards, the <em>home</em> layout will inject all content from your <code class="language-plaintext highlighter-rouge">index</code> / <code class="language-plaintext highlighter-rouge">index.html</code> <strong>before</strong> the <strong><code class="language-plaintext highlighter-rouge">Posts</code></strong> heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. <em>We recommended that you title this section with a Heading2 (<code class="language-plaintext highlighter-rouge">##</code>)</em>.</p>
 
 <p>Usually the <code class="language-plaintext highlighter-rouge">site.title</code> itself would suffice as the implicit ‘main-title’ for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a <code class="language-plaintext highlighter-rouge">title</code> variable in the document’s front matter and it will be rendered with an <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> tag.</p>
 
@@ -1043,8 +1043,8 @@ summarized in the following table:</p>
 <p>For instance, to only link to the <code class="language-plaintext highlighter-rouge">about</code> and the <code class="language-plaintext highlighter-rouge">portfolio</code> page, add the following to your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">header_pages</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">about.md</span>
-  <span class="pi">-</span> <span class="s">portfolio.md</span>
+  <span class="pi">-</span> <span class="s">about</span>
+  <span class="pi">-</span> <span class="s">portfolio</span>
 </code></pre></div></div>
 
 <h3 id="change-default-date-format">Change default date format</h3>
