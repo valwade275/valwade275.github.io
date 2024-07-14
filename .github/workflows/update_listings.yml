@@ -27,12 +27,20 @@ jobs:
         WIKI_DIR: './wiki' # Set the environment variable to the correct path
 
     - name: Commit and push changes
+  # Configure GitHub Actions bot
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+  # Check for changes
+      if [ -n "$(git status --porcelain)" ]; then
+  # Changes present
         git add _data/listings.json
         git add Gemfile.lock   
         git commit -m 'Update listings.json and Gemfile.lock'
         git push
+      else
+        # No changes
+        echo "No changes to commit"
+      fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
