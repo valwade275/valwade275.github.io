@@ -31,7 +31,8 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add _data/listings.json
-        git commit -m 'Update listings.json'
+        git add Gemfile.lock   
+        git commit -m 'Update listings.json and Gemfile.lock'
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
