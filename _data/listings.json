@@ -9,134 +9,26 @@
         ],
         "files": [
           {
-            "name": "index.html",
-            "path": "/animals/index.html"
-          },
-          {
             "name": "links.md",
             "path": "/animals/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/animals/index.html"
           }
         ],
         "path": "/animals"
       }
     },
     {
-<<<<<<< HEAD
-      "name": "art",
-      "path": "/art",
-=======
       "name": "stay-ready",
       "path": "/stay-ready",
->>>>>>> 423055fbecaf6ae13bed162f0761fb98ff179fb2
       "listings": {
         "folders": [
 
         ],
         "files": [
           {
-<<<<<<< HEAD
-            "name": "index.html",
-            "path": "/art/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/art/links.md"
-          }
-        ],
-        "path": "/art"
-      }
-    },
-    {
-      "name": "books",
-      "path": "/books",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "index.html",
-            "path": "/books/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/books/links.md"
-          }
-        ],
-        "path": "/books"
-      }
-    },
-    {
-      "name": "exercise",
-      "path": "/exercise",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "index.html",
-            "path": "/exercise/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/exercise/links.md"
-          }
-        ],
-        "path": "/exercise"
-      }
-    },
-    {
-      "name": "fashion-history",
-      "path": "/fashion-history",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "index.html",
-            "path": "/fashion-history/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/fashion-history/links.md"
-          },
-          {
-            "name": "zelda-wynn-valdes1.md",
-            "path": "/fashion-history/zelda-wynn-valdes1.md"
-          }
-        ],
-        "path": "/fashion-history"
-      }
-    },
-    {
-      "name": "gardening",
-      "path": "/gardening",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "FermentedHoney.md",
-            "path": "/gardening/FermentedHoney.md"
-          },
-          {
-            "name": "FireCider.md",
-            "path": "/gardening/FireCider.md"
-          },
-          {
-            "name": "index.html",
-            "path": "/gardening/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/gardening/links.md"
-          }
-        ],
-        "path": "/gardening"
-=======
             "name": "links.md",
             "path": "/stay-ready/links.md"
           },
@@ -146,7 +38,6 @@
           }
         ],
         "path": "/stay-ready"
->>>>>>> 423055fbecaf6ae13bed162f0761fb98ff179fb2
       }
     },
     {
@@ -158,12 +49,12 @@
         ],
         "files": [
           {
-            "name": "index.html",
-            "path": "/getting-outdoors/index.html"
-          },
-          {
             "name": "links.md",
             "path": "/getting-outdoors/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/getting-outdoors/index.html"
           }
         ],
         "path": "/getting-outdoors"
@@ -178,15 +69,79 @@
         ],
         "files": [
           {
-            "name": "index.html",
-            "path": "/music/index.html"
-          },
-          {
             "name": "links.md",
             "path": "/music/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/music/index.html"
           }
         ],
         "path": "/music"
+      }
+    },
+    {
+      "name": "books",
+      "path": "/books",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/books/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/books/index.html"
+          }
+        ],
+        "path": "/books"
+      }
+    },
+    {
+      "name": "fashion-history",
+      "path": "/fashion-history",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/fashion-history/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/fashion-history/index.html"
+          },
+          {
+            "name": "zelda-wynn-valdes1.md",
+            "path": "/fashion-history/zelda-wynn-valdes1.md"
+          }
+        ],
+        "path": "/fashion-history"
+      }
+    },
+    {
+      "name": "art",
+      "path": "/art",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/art/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/art/index.html"
+          }
+        ],
+        "path": "/art"
       }
     },
     {
@@ -198,55 +153,15 @@
         ],
         "files": [
           {
-            "name": "index.html",
-            "path": "/mythologies/index.html"
-          },
-          {
             "name": "links.md",
             "path": "/mythologies/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/mythologies/index.html"
           }
         ],
         "path": "/mythologies"
-      }
-    },
-    {
-      "name": "poetry",
-      "path": "/poetry",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "index.html",
-            "path": "/poetry/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/poetry/links.md"
-          }
-        ],
-        "path": "/poetry"
-      }
-    },
-    {
-      "name": "stay-ready",
-      "path": "/stay-ready",
-      "listings": {
-        "folders": [
-
-        ],
-        "files": [
-          {
-            "name": "index.html",
-            "path": "/stay-ready/index.html"
-          },
-          {
-            "name": "links.md",
-            "path": "/stay-ready/links.md"
-          }
-        ],
-        "path": "/stay-ready"
       }
     },
     {
@@ -258,15 +173,43 @@
         ],
         "files": [
           {
-            "name": "index.html",
-            "path": "/technical-writing/index.html"
-          },
-          {
             "name": "links.md",
             "path": "/technical-writing/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/technical-writing/index.html"
           }
         ],
         "path": "/technical-writing"
+      }
+    },
+    {
+      "name": "gardening",
+      "path": "/gardening",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/gardening/links.md"
+          },
+          {
+            "name": "FireCider.md",
+            "path": "/gardening/FireCider.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/gardening/index.html"
+          },
+          {
+            "name": "FermentedHoney.md",
+            "path": "/gardening/FermentedHoney.md"
+          }
+        ],
+        "path": "/gardening"
       }
     },
     {
@@ -282,15 +225,55 @@
             "path": "/texas-history/historic-downtowns.md"
           },
           {
-            "name": "index.html",
-            "path": "/texas-history/index.html"
-          },
-          {
             "name": "links.md",
             "path": "/texas-history/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/texas-history/index.html"
           }
         ],
         "path": "/texas-history"
+      }
+    },
+    {
+      "name": "exercise",
+      "path": "/exercise",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/exercise/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/exercise/index.html"
+          }
+        ],
+        "path": "/exercise"
+      }
+    },
+    {
+      "name": "poetry",
+      "path": "/poetry",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "links.md",
+            "path": "/poetry/links.md"
+          },
+          {
+            "name": "index.html",
+            "path": "/poetry/index.html"
+          }
+        ],
+        "path": "/poetry"
       }
     }
   ],
