@@ -273,12 +273,20 @@
         ],
         "files": [
           {
+            "name": "6-Constraint-Project-Management-Star.jpg",
+            "path": "/project-management/6-Constraint-Project-Management-Star.jpg"
+          },
+          {
             "name": "index.html",
             "path": "/project-management/index.html"
           },
           {
             "name": "links.md",
             "path": "/project-management/links.md"
+          },
+          {
+            "name": "project-management-triple-constraint.png",
+            "path": "/project-management/project-management-triple-constraint.png"
           }
         ],
         "path": "/project-management"
