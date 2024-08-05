@@ -1,6 +1,38 @@
 {
   "folders": [
     {
+      "name": ".obsidian",
+      "path": "/.obsidian",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "app.json",
+            "path": "/.obsidian/app.json"
+          },
+          {
+            "name": "appearance.json",
+            "path": "/.obsidian/appearance.json"
+          },
+          {
+            "name": "core-plugins-migration.json",
+            "path": "/.obsidian/core-plugins-migration.json"
+          },
+          {
+            "name": "core-plugins.json",
+            "path": "/.obsidian/core-plugins.json"
+          },
+          {
+            "name": "workspace.json",
+            "path": "/.obsidian/workspace.json"
+          }
+        ],
+        "path": "/.obsidian"
+      }
+    },
+    {
       "name": "animals",
       "path": "/animals",
       "listings": {
@@ -193,6 +225,26 @@
       }
     },
     {
+      "name": "notary-things",
+      "path": "/notary-things",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "/notary-things/index.html"
+          },
+          {
+            "name": "links.md",
+            "path": "/notary-things/links.md"
+          }
+        ],
+        "path": "/notary-things"
+      }
+    },
+    {
       "name": "poetry",
       "path": "/poetry",
       "listings": {
@@ -210,6 +262,26 @@
           }
         ],
         "path": "/poetry"
+      }
+    },
+    {
+      "name": "project-management",
+      "path": "/project-management",
+      "listings": {
+        "folders": [
+
+        ],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "/project-management/index.html"
+          },
+          {
+            "name": "links.md",
+            "path": "/project-management/links.md"
+          }
+        ],
+        "path": "/project-management"
       }
     },
     {
