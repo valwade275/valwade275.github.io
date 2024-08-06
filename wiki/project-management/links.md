@@ -10,6 +10,8 @@ title: Project Management Links
 - [Prince2 Resources](https://www.prince2.com/usa/resources) 
 - [ProjectManager](https://www.projectmanager.com/)
     - Check out their "Resources" tab.
+- [Overview of Methodologies](https://www.teamwork.com/project-management-guide/project-management-methodologies/)  
+- [Types of ORganizational Structures](https://www.project-management-skills.com/organizational-structure-types.html)  
 
 ## SMART Goals
 
