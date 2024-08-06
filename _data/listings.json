@@ -287,6 +287,18 @@
           {
             "name": "project-management-triple-constraint.png",
             "path": "/project-management/project-management-triple-constraint.png"
+          },
+          {
+            "name": "RACI_Chart_Example.jpg",
+            "path": "/project-management/RACI_Chart_Example.jpg"
+          },
+          {
+            "name": "SMART_Goals.png",
+            "path": "/project-management/SMART_Goals.png"
+          },
+          {
+            "name": "Stakeholder_Power_Grid.png",
+            "path": "/project-management/Stakeholder_Power_Grid.png"
           }
         ],
         "path": "/project-management"
@@ -331,6 +343,10 @@
           {
             "name": "links.md",
             "path": "/technical-writing/links.md"
+          },
+          {
+            "name": "Tips-for-accessible-content.pdf",
+            "path": "/technical-writing/Tips-for-accessible-content.pdf"
           }
         ],
         "path": "/technical-writing"
