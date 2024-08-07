@@ -91,6 +91,24 @@
     a:hover {
       color: #555;
     }
+    .thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .thumbnails li {
+      flex: 1 1 calc(50% - 1rem);
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #555;
+    }
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+    }
+    .thumbnails li:last-child {
+      flex: 1 1 calc(50% - 1rem);
+    }
   </style>
 </head>
 <body>
@@ -132,14 +150,12 @@
       <h2>Wiki Folder: Project Management</h2>
       <p>Tips and tricks for effective project management.    </p> <!-- Centered content -->
       <div class="left-align">
+        <h3>Notes</h3>
         <ul>
           
           
           
             
-              
-                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
-                <li><a href="/wiki/project-management/6-Constraint-Project-Management-Star.jpg" target="_blank">6-Constraint-Project-Management-Star.jpg</a></li>
               
             
               
@@ -150,27 +166,62 @@
               
             
               
-                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
-                <li><a href="/wiki/project-management/project-management-triple-constraint.png" target="_blank">project-management-triple-constraint.png</a></li>
+            
               
             
               
-                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
-                <li><a href="/wiki/project-management/RACI_Chart_Example.jpg" target="_blank">RACI_Chart_Example.jpg</a></li>
-              
             
-              
-                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
-                <li><a href="/wiki/project-management/SMART_Goals.png" target="_blank">SMART_Goals.png</a></li>
-              
-            
-              
-                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
-                <li><a href="/wiki/project-management/Stakeholder_Power_Grid.png" target="_blank">Stakeholder_Power_Grid.png</a></li>
               
             
           
         </ul>
+        
+        
+        
+          <h3>Images</h3>
+          <ul class="thumbnails">
+            
+              
+                <li>
+                  <a href="/wiki/project-management/6-Constraint-Project-Management-Star.jpg" target="_blank">6-Constraint-Project-Management-Star.jpg</a>
+                  <img src="/wiki/project-management/6-Constraint-Project-Management-Star.jpg" alt="6-Constraint-Project-Management-Star.jpg">
+                </li>
+              
+            
+              
+            
+              
+            
+              
+                <li>
+                  <a href="/wiki/project-management/project-management-triple-constraint.png" target="_blank">project-management-triple-constraint.png</a>
+                  <img src="/wiki/project-management/project-management-triple-constraint.png" alt="project-management-triple-constraint.png">
+                </li>
+              
+            
+              
+                <li>
+                  <a href="/wiki/project-management/RACI_Chart_Example.jpg" target="_blank">RACI_Chart_Example.jpg</a>
+                  <img src="/wiki/project-management/RACI_Chart_Example.jpg" alt="RACI_Chart_Example.jpg">
+                </li>
+              
+            
+              
+                <li>
+                  <a href="/wiki/project-management/SMART_Goals.png" target="_blank">SMART_Goals.png</a>
+                  <img src="/wiki/project-management/SMART_Goals.png" alt="SMART_Goals.png">
+                </li>
+              
+            
+              
+                <li>
+                  <a href="/wiki/project-management/Stakeholder_Power_Grid.png" target="_blank">Stakeholder_Power_Grid.png</a>
+                  <img src="/wiki/project-management/Stakeholder_Power_Grid.png" alt="Stakeholder_Power_Grid.png">
+                </li>
+              
+            
+          </ul>
+        
       </div>
     </div>
   </main>

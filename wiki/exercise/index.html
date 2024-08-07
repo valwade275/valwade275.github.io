@@ -91,6 +91,24 @@
     a:hover {
       color: #555;
     }
+    .thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .thumbnails li {
+      flex: 1 1 calc(50% - 1rem);
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #555;
+    }
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+    }
+    .thumbnails li:last-child {
+      flex: 1 1 calc(50% - 1rem);
+    }
   </style>
 </head>
 <body>
@@ -134,6 +152,7 @@
 
 </p> <!-- Centered content -->
       <div class="left-align">
+        <h3>Notes</h3>
         <ul>
           
           
@@ -148,6 +167,9 @@
             
           
         </ul>
+        
+        
+        
       </div>
     </div>
   </main>

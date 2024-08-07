@@ -91,6 +91,24 @@
     a:hover {
       color: #555;
     }
+    .thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .thumbnails li {
+      flex: 1 1 calc(50% - 1rem);
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #555;
+    }
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+    }
+    .thumbnails li:last-child {
+      flex: 1 1 calc(50% - 1rem);
+    }
   </style>
 </head>
 <body>
@@ -132,6 +150,7 @@
       <h2>Wiki Folder: Technical Writing</h2>
       <p>Musings and thoughts on technical writing, tools, and philosophies.</p> <!-- Centered content -->
       <div class="left-align">
+        <h3>Notes</h3>
         <ul>
           
           
@@ -145,12 +164,12 @@
               
             
               
-                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
-                <li><a href="/wiki/technical-writing/Tips-for-accessible-content.pdf" target="_blank">Tips-for-accessible-content.pdf</a></li>
-              
             
           
         </ul>
+        
+        
+        
       </div>
     </div>
   </main>
