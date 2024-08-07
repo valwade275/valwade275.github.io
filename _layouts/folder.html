@@ -91,6 +91,24 @@
     a:hover {
       color: #555;
     }
+    .thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .thumbnails li {
+      flex: 1 1 calc(50% - 1rem);
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #555;
+    }
+    .thumbnails img {
+      width: 100%;
+      height: auto;
+    }
+    .thumbnails li:last-child {
+      flex: 1 1 calc(50% - 1rem);
+    }
   </style>
 </head>
 <body>
@@ -118,20 +136,40 @@
       <h2>Wiki Folder: {{ page.title }}</h2>
       <p>{{ content }}</p> <!-- Centered content -->
       <div class="left-align">
+        <h3>Notes</h3>
         <ul>
           {% assign folder_name = page.dir | split: '/' | last %}
           {% assign folder = site.data.listings.folders | where: "name", folder_name | first %}
           {% if folder %}
             {% for file in folder.listings.files %}
-              {% if file.name != 'index.html' %}
+              {% if file.name != 'index.html' and file.name contains '.md' %}
                 <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
                 <li><a href="{{ '/wiki' | append: file.path | replace: '.md', '' }}" target="_blank">{{ file.name }}</a></li>
               {% endif %}
             {% endfor %}
           {% else %}
-            <li>No files found in this folder.</li>
+            <li>No notes found in this folder.</li>
           {% endif %}
         </ul>
+        {% assign image_files = "" %}
+        {% for file in folder.listings.files %}
+          {% if file.name contains '.jpg' or file.name contains '.jpeg' or file.name contains '.png' or file.name contains '.gif' %}
+            {% assign image_files = image_files | append: file.name %}
+          {% endif %}
+        {% endfor %}
+        {% if image_files != "" %}
+          <h3>Images</h3>
+          <ul class="thumbnails">
+            {% for file in folder.listings.files %}
+              {% if file.name contains '.jpg' or file.name contains '.jpeg' or file.name contains '.png' or file.name contains '.gif' %}
+                <li>
+                  <a href="{{ '/wiki' | append: file.path }}" target="_blank">{{ file.name }}</a>
+                  <img src="{{ '/wiki' | append: file.path }}" alt="{{ file.name }}">
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
       </div>
     </div>
   </main>

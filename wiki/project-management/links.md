@@ -70,6 +70,6 @@ title: Project Management Links
 
 - [Asana](https://asana.com/)  
 - [Basecamp](https://basecamp.com/)  
-- [CkickUp](https://www.clickup.com/)  
+- [ClickUp](https://www.clickup.com/)  
 - [Jira](https://www.atlassian.com/software/jira)  
 - [Smartsheet](https://www.smartsheet.com/)  
