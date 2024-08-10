@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project-management/links.md",
+                "file": "fashion-history/zelda-wynn-valdes.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project-management/links.md",
+                "file": "fashion-history/zelda-wynn-valdes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project-management/links.md",
+                "file": "fashion-history/zelda-wynn-valdes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project-management/links.md"
+                "file": "fashion-history/zelda-wynn-valdes.md"
               }
             }
           }
@@ -146,9 +146,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b192e80f12f38f4",
+  "active": "c19626433a603414",
   "lastOpenFiles": [
-    "technical-writing/Tips-for-accessible-content.pdf",
-    "fashion-history/links.md"
+    "fashion-history/links.md",
+    "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
+    "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
+    "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",
+    "fashion-history/valdes-draping-dress-1.jpg",
+    "fashion-history/zelda-wynn-valdes.md",
+    "fashion-history/mae-west-in-valdes-dress.jpg",
+    "stay-ready/links.md",
+    "project-management/links.md",
+    "texas-history/links.md",
+    "technical-writing/links.md",
+    "notary-things/links.md",
+    "mythologies/links.md",
+    "music/links.md",
+    "getting-outdoors/links.md",
+    "gardening/FermentedHoney.md",
+    "gardening/FireCider.md",
+    "gardening/links.md",
+    "exercise/links.md",
+    "animals/links.md",
+    "art/links.md",
+    "books/links.md",
+    "exercise/classical-pilates-mat-exercises.jpg",
+    "technical-writing/Tips-for-accessible-content.pdf"
   ]
 }
