@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fashion-history/links.md",
+                "file": "fashion-history/19th-century.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fashion-history/links.md",
+                "file": "fashion-history/19th-century.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fashion-history/links.md",
+                "file": "fashion-history/19th-century.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fashion-history/links.md"
+                "file": "fashion-history/19th-century.md"
               }
             }
           }
@@ -148,6 +148,14 @@
   },
   "active": "8b192e80f12f38f4",
   "lastOpenFiles": [
+    "fashion-history/zelda-wynn-valdes.md",
+    "fashion-history/19th-century.md",
+    "fashion-history/mae-west-in-valdes-dress.jpg",
+    "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
+    "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",
+    "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
+    "fashion-history/valdes-draping-dress-1.jpg",
+    "fashion-history/links.md",
     "texas-history/links.md",
     "technical-writing/links.md",
     "stay-ready/links.md",
@@ -158,18 +166,11 @@
     "music/links.md",
     "getting-outdoors/links.md",
     "gardening/links.md",
-    "fashion-history/links.md",
     "animals/links.md",
     "art/links.md",
     "books/links.md",
     "exercise/links.md",
     "exercise/classical-pilates-mat-exercises.jpg",
-    "fashion-history/zelda-wynn-valdes.md",
-    "fashion-history/valdes-draping-dress-1.jpg",
-    "fashion-history/mae-west-in-valdes-dress.jpg",
-    "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
-    "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",
-    "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
     "technical-writing/Tips-for-accessible-content.pdf"
   ]
 }
