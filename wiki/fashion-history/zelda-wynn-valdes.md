@@ -14,4 +14,4 @@ One person I think deserves more recognition is [Zelda Wynn Valdes](https://en.m
 
 
 [comment]: _Reminder: Research her connections to other costumers and creatives._
-[comment]: _Also, check this filename from mobile at a later date. Possible bug?_
+

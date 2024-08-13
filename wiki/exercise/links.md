@@ -9,7 +9,7 @@ title: Exercise Resource Links
 - [Grow with Jo](https://www.youtube.com/@growwithjo) 
 - [Blogilates with Cassey Ho](https://www.youtube.com/@blogilates) 
 
->>>>>>> ec345c0992f40d0e8ff512028161392732b3e6a7
+
 # Yoga
 
 ## Surya Namaskar (Sun Salutation)
@@ -21,3 +21,7 @@ title: Exercise Resource Links
 - [Chandra Namaskar Tutorial 2](https://yogainternational.com/article/view/a-meditative-moon-salutation/)
 
 # Pilates
+- [Beginner Pilates 1](https://www.basipilates.com/pilates/10-essential-pilates-exercises-for-beginners/)  
+- [Beginner Pilates 2](https://www.pilatesanytime.com/mx/pilates-beginners)  
+- [Advanced Pilates 1](https://www.pilatesanytime.com/exercises.cfm?my_equip_id=1&action=advanced) 
+- [Advanced Pilates 2](https://www.marieclaire.co.uk/life/health-fitness/experts-confirm-these-are-the-7-most-advanced-pilates-exercises-you-can-do-from-home-to-build-strength-balance-and-tone) 
