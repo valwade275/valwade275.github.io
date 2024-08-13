@@ -101,6 +101,10 @@
         ],
         "files": [
           {
+            "name": "classical-pilates-mat-exercises.jpg",
+            "path": "/exercise/classical-pilates-mat-exercises.jpg"
+          },
+          {
             "name": "index.html",
             "path": "/exercise/index.html"
           },
@@ -121,16 +125,36 @@
         ],
         "files": [
           {
+            "name": "eartha-kitt-in-valdes-dress-1.jpg",
+            "path": "/fashion-history/eartha-kitt-in-valdes-dress-1.jpg"
+          },
+          {
             "name": "index.html",
             "path": "/fashion-history/index.html"
+          },
+          {
+            "name": "joyce-bryant-in-valdes-dress-1.jpg",
+            "path": "/fashion-history/joyce-bryant-in-valdes-dress-1.jpg"
+          },
+          {
+            "name": "joyce-bryant-in-valdes-dress-2.jpg",
+            "path": "/fashion-history/joyce-bryant-in-valdes-dress-2.jpg"
           },
           {
             "name": "links.md",
             "path": "/fashion-history/links.md"
           },
           {
-            "name": "zelda-wynn-valdes1.md",
-            "path": "/fashion-history/zelda-wynn-valdes1.md"
+            "name": "mae-west-in-valdes-dress.jpg",
+            "path": "/fashion-history/mae-west-in-valdes-dress.jpg"
+          },
+          {
+            "name": "valdes-draping-dress-1.jpg",
+            "path": "/fashion-history/valdes-draping-dress-1.jpg"
+          },
+          {
+            "name": "zelda-wynn-valdes.md",
+            "path": "/fashion-history/zelda-wynn-valdes.md"
           }
         ],
         "path": "/fashion-history"

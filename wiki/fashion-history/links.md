@@ -27,19 +27,17 @@ title: Fashion History Links
 ## Satin 
 
 ## Chambray
-- https://thefabricofourlives.com/cotton-fabrics/chambray
-- 
+- [Chambray Quick Guide 1](https://thefabricofourlives.com/cotton-fabrics/chambray)
 
 
 # Pigment & Color
 
 ## Egyptian Blue
-- https://en.m.wikipedia.org/wiki/Egyptian_blue 
-- https://colourlex.com/project/egyptian-blue/
+- [Wikipedia - Egyptian Blue](https://en.m.wikipedia.org/wiki/Egyptian_blue) 
+- [ColourLex - Egyptian Blue](https://colourlex.com/project/egyptian-blue/)
 
 ## Indigo
-- https://colourlex.com/project/indigo/ 
+- [ColourLex - Indigo](https://colourlex.com/project/indigo/) 
 
 ## Tyrian Purple
-- https://colourlex.com/project/tyrian-purple/ 
-- 
+- [ColourLex - Tyrian Purple](https://colourlex.com/project/tyrian-purple/) 
