@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project-management/links.md",
+                "file": "exercise/links.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project-management/links.md",
+                "file": "exercise/links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project-management/links.md",
+                "file": "exercise/links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project-management/links.md"
+                "file": "exercise/links.md"
               }
             }
           }
@@ -148,7 +148,14 @@
   },
   "active": "8b192e80f12f38f4",
   "lastOpenFiles": [
-    "technical-writing/Tips-for-accessible-content.pdf",
-    "fashion-history/links.md"
+    "fashion-history/links.md",
+    "exercise/links.md",
+    "books/links.md",
+    "art/links.md",
+    "animals/links.md",
+    "getting-outdoors/links.md",
+    "gardening/links.md",
+    "project-management/links.md",
+    "technical-writing/Tips-for-accessible-content.pdf"
   ]
 }

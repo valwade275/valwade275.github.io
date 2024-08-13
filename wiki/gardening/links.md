@@ -11,3 +11,4 @@ title: Gardening Links
 
 - [Houston Urban Harvest](https://www.urbanharvest.org/) 
 
+- [Community Gardens in Houston - July 2024](https://www.houstoniamag.com/news-and-city-life/2024/07/community-gardens-houston)  

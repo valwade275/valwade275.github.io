@@ -1,3 +1,7 @@
+---
+title: Exercise Links
+---
+
 # Yoga
 
 ## Surya Namaskar

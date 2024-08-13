@@ -62,6 +62,9 @@ title: Project Management Links
 - [The RACI Matrix](https://www.cio.com/article/287088/project-management-how-to-design-a-successful-raci-project-plan.html)  
 - [A Comprehensive Project Management Guide for Everything RACI](https://www.smartsheet.com/comprehensive-project-management-guide-everything-raci)  
 
+## Work Breakdown Structure (WBS)
+- [WBS Quick Guide](https://www.lucidchart.com/blog/how-to-create-a-work-breakdown-structure-and-why-you-should) 
+
 ## Addressing Failures
 
 - [7 Project Failures and What We Can Learn from Them](https://project-management.com/7-lessons-to-learn-from-a-failed-project/)  
