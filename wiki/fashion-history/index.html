@@ -101,10 +101,14 @@
       box-sizing: border-box;
       padding: 5px;
       border: 1px solid #555;
+      display: flex; 
+    justify-content: center; 
+    align-items: center; 
     }
     .thumbnails img {
-      width: 100%;
+      width: 50%;
       height: auto;
+      display: block;  
     }
     .thumbnails li:last-child {
       flex: 1 1 calc(50% - 1rem);
@@ -157,6 +161,11 @@
           
             
               
+                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
+                <li><a href="/wiki/fashion-history/19th-century" target="_blank">19th-century.md</a></li>
+              
+            
+              
             
               
             
@@ -185,6 +194,8 @@
         
           <h3>Images</h3>
           <ul class="thumbnails">
+            
+              
             
               
                 <li>
