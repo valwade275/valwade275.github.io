@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fashion-history/19th-century.md",
+                "file": "project-management/links.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fashion-history/19th-century.md",
+                "file": "project-management/links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fashion-history/19th-century.md",
+                "file": "project-management/links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fashion-history/19th-century.md"
+                "file": "project-management/links.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b192e80f12f38f4",
+  "active": "c19626433a603414",
   "lastOpenFiles": [
-    "fashion-history/zelda-wynn-valdes.md",
+    "project-management/agile-vs-waterfall.png",
     "fashion-history/19th-century.md",
+    "fashion-history/zelda-wynn-valdes.md",
     "fashion-history/mae-west-in-valdes-dress.jpg",
     "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
     "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",

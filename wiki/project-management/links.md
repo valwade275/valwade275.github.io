@@ -12,6 +12,8 @@ title: Project Management Links
     - Check out their "Resources" tab.
 - [Overview of Methodologies](https://www.teamwork.com/project-management-guide/project-management-methodologies/)  
 - [Types of ORganizational Structures](https://www.project-management-skills.com/organizational-structure-types.html)  
+- [Agile Manifesto](http://agilemanifesto.org/)  
+- [Agile Principles](http://agilemanifesto.org/principles.html)  
 
 ## SMART Goals
 
