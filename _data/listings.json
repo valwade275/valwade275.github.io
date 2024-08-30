@@ -369,6 +369,10 @@
         ],
         "files": [
           {
+            "name": "all-about-sops.md",
+            "path": "/technical-writing/all-about-sops.md"
+          },
+          {
             "name": "index.html",
             "path": "/technical-writing/index.html"
           },

@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "2203c4b155434f9b",
+        "id": "c386f5a4cd4c6498",
         "type": "tabs",
         "children": [
           {
-            "id": "8b192e80f12f38f4",
+            "id": "f3eca4fd5b92b2c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project-management/links.md",
+                "file": "mythologies/links.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project-management/links.md",
+                "file": "mythologies/links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project-management/links.md",
+                "file": "mythologies/links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project-management/links.md"
+                "file": "mythologies/links.md"
               }
             }
           }
@@ -146,8 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c19626433a603414",
+  "active": "f3eca4fd5b92b2c0",
   "lastOpenFiles": [
+    "animals/links.md",
+    "project-management/links.md",
+    "poetry/links.md",
+    "technical-writing/all-about-sops.md",
+    "technical-writing/links.md",
+    "art/links.md",
     "project-management/agile-vs-waterfall.png",
     "fashion-history/19th-century.md",
     "fashion-history/zelda-wynn-valdes.md",
@@ -158,17 +164,12 @@
     "fashion-history/valdes-draping-dress-1.jpg",
     "fashion-history/links.md",
     "texas-history/links.md",
-    "technical-writing/links.md",
     "stay-ready/links.md",
-    "project-management/links.md",
-    "poetry/links.md",
     "notary-things/links.md",
     "mythologies/links.md",
     "music/links.md",
     "getting-outdoors/links.md",
     "gardening/links.md",
-    "animals/links.md",
-    "art/links.md",
     "books/links.md",
     "exercise/links.md",
     "exercise/classical-pilates-mat-exercises.jpg",
