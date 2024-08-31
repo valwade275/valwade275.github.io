@@ -24,3 +24,5 @@ date: 2024-08-30
 - [Useful Reddit Thread](https://www.reddit.com/r/Solo_Roleplaying/comments/srlkyz/is_there_a_guide_out_there_for_somebody_brand_new/)  
 - [Dice Dragons Blog](https://www.dicedragons.co.uk/blogs/tabletop-tips/how-to-play-dnd-solo-by-yourself?srsltid=AfmBOoplfyAOC2dZxSPsjq-mNN9BuIm35YsCvb7_5NfN4Ndhj7D6XbK6)  
 - [Solo Dungeon Crawler (Video)](https://www.youtube.com/watch?v=GY3T9kkO8H4) 
+- [Another Useful Reddit Thread (with dice tips)](https://www.reddit.com/r/Solo_Roleplaying/comments/ydnbmq/best_oracle_system_you_use/) 
+- [Free D6 Oracle](https://yumdm.com/a-simple-oracle-for-solo-roleplaying/)  
