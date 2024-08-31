@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <style>
+    /* Include your CSS styles here */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #301934;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    header {
+      background: #301934;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .breadcrumb {
+      margin: 1rem 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .breadcrumb li {
+      margin-right: 0.5rem;
+    }
+    .breadcrumb li a {
+      color: #301934;
+      text-decoration: none;
+    }
+    .breadcrumb li a:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb li::after {
+      content: "/";
+      margin-left: 0.5rem;
+    }
+    .breadcrumb li:last-child::after {
+      content: "";
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center text inside main */
+    }
+    main h2, main h3 {
+      text-align: center;
+    }
+    .left-align {
+      text-align: left; /* New class for left alignment */
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #301934;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    footer .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    a {
+      color: #301934;
+    }
+    a:hover {
+      color: #555;
+    }
+    .thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .thumbnails li {
+      flex: 1 1 calc(50% - 1rem);
+      box-sizing: border-box;
+      padding: 5px;
+      border: 1px solid #555;
+      display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    }
+    .thumbnails img {
+      width: 50%;
+      height: auto;
+      display: block;  
+    }
+    .thumbnails li:last-child {
+      flex: 1 1 calc(50% - 1rem);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Games</h1>
+      <a href="/" style="color: #fff;">Home</a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+        
+        
+        
+          
+            
+            <li>
+              <a href="/"></a>
+            </li>
+          
+        
+          
+            
+            <li>
+              <a href="/wiki/">Wiki</a>
+            </li>
+          
+        
+          
+            
+            <li>
+              <a href="/wiki/games/">Games</a>
+            </li>
+          
+        
+      </ul>
+      <h2>Wiki Folder: Games</h2>
+      <p>Girls just want to have fun.    
+</p> <!-- Centered content -->
+      <div class="left-align">
+        <h3>Notes</h3>
+        <ul>
+          
+          
+          
+            
+              
+                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
+                <li><a href="/wiki/games/dnd" target="_blank">dnd.md</a></li>
+              
+            
+              
+            
+              
+                <!-- Ensure the file links open in a new tab and allow the browser to handle the file types -->
+                <li><a href="/wiki/games/mtg" target="_blank">mtg.md</a></li>
+              
+            
+          
+        </ul>
+        
+        
+        
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
