@@ -25,6 +25,10 @@
             "path": "/.obsidian/core-plugins.json"
           },
           {
+            "name": "graph.json",
+            "path": "/.obsidian/graph.json"
+          },
+          {
             "name": "workspace.json",
             "path": "/.obsidian/workspace.json"
           }
