@@ -147,4 +147,25 @@ ruby generate_listings.rb
 bundle exec jekyll build
 bundle exec jekyll serve
 ```
-Once the site is built and available on my local server, I navigate to http://localhost:4000/ to view it.
+Once the site is built and available on my local server, I navigate to http://localhost:4000/ to view it. 
+
+# Git Commands 
+The standard commands for updating my GitHub site are second-nature by now. But in case a refresher is needed, here are the commands I typically use:  
+
+```
+cd valwade275.github.io
+git status (check on changes)
+git pull (update local repo)
+git add . (add changes)
+git commit -m "message"
+git push
+```
+
+If something goes wrong, refer to the appropriate [Git Guides](https://github.com/git-guides) for assistance. 
+- [status](https://github.com/git-guides/git-status)
+- [pull](https://github.com/git-guides/git-pull)
+- [add](https://github.com/git-guides/git-add)
+- [commit](https://github.com/git-guides/git-commit)
+- [push](https://github.com/git-guides/git-push) 
+
+If you get tangled up in the terminal, [here's a quick reference for the most common commands](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce). 
