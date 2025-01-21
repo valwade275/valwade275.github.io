@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "getting-outdoors/links.md",
+                "file": "notary-things/links.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "getting-outdoors/links.md",
+                "file": "notary-things/links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "getting-outdoors/links.md",
+                "file": "notary-things/links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "getting-outdoors/links.md"
+                "file": "notary-things/links.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "f3eca4fd5b92b2c0",
   "lastOpenFiles": [
+    "project-management/6-Constraint-Project-Management-Star.jpg",
+    "texas-history/historic-downtowns.md",
+    "stay-ready/links.md",
+    "getting-outdoors/links.md",
     "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
     "fashion-history/19th-century.md",
     "games/mtg.md",
@@ -170,10 +174,8 @@
     "fashion-history/valdes-draping-dress-1.jpg",
     "fashion-history/links.md",
     "texas-history/links.md",
-    "stay-ready/links.md",
     "notary-things/links.md",
     "music/links.md",
-    "getting-outdoors/links.md",
     "gardening/links.md",
     "books/links.md",
     "exercise/links.md",
