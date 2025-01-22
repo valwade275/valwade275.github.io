@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mythologies/links.md",
+                "file": "games/mtg.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mythologies/links.md",
+                "file": "games/mtg.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mythologies/links.md",
+                "file": "games/mtg.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mythologies/links.md"
+                "file": "games/mtg.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "f3eca4fd5b92b2c0",
   "lastOpenFiles": [
-    "games/mtg.md",
     "games/dnd.md",
+    "mythologies/links.md",
+    "games/mtg.md",
     "games/index.html",
     "games",
     "New folder",
@@ -171,7 +172,6 @@
     "texas-history/links.md",
     "stay-ready/links.md",
     "notary-things/links.md",
-    "mythologies/links.md",
     "music/links.md",
     "getting-outdoors/links.md",
     "gardening/links.md",
