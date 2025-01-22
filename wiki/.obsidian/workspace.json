@@ -13,7 +13,11 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "games/mtg.md",
+=======
+                "file": "notary-things/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +89,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "games/mtg.md",
+=======
+                "file": "notary-things/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "games/mtg.md",
+=======
+                "file": "notary-things/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "games/mtg.md"
+=======
+                "file": "notary-things/links.md"
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
               }
             }
           }
@@ -148,9 +164,21 @@
   },
   "active": "f3eca4fd5b92b2c0",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "games/dnd.md",
     "mythologies/links.md",
     "games/mtg.md",
+=======
+    "project-management/6-Constraint-Project-Management-Star.jpg",
+    "texas-history/historic-downtowns.md",
+    "stay-ready/links.md",
+    "getting-outdoors/links.md",
+    "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
+    "fashion-history/19th-century.md",
+    "games/mtg.md",
+    "games/dnd.md",
+    "mythologies/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
     "games/index.html",
     "games",
     "New folder",
@@ -161,19 +189,15 @@
     "technical-writing/links.md",
     "art/links.md",
     "project-management/agile-vs-waterfall.png",
-    "fashion-history/19th-century.md",
     "fashion-history/zelda-wynn-valdes.md",
     "fashion-history/mae-west-in-valdes-dress.jpg",
     "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
     "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",
-    "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
     "fashion-history/valdes-draping-dress-1.jpg",
     "fashion-history/links.md",
     "texas-history/links.md",
-    "stay-ready/links.md",
     "notary-things/links.md",
     "music/links.md",
-    "getting-outdoors/links.md",
     "gardening/links.md",
     "books/links.md",
     "exercise/links.md",
