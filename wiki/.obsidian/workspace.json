@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notary-things/links.md",
+                "file": "art/links.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "links"
             }
           }
         ]
@@ -39,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notary-things/links.md",
+                "file": "art/links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for links"
             }
           },
           {
@@ -102,10 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notary-things/links.md",
+                "file": "art/links.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from links"
             }
           },
           {
@@ -116,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notary-things/links.md"
-              }
+                "file": "art/links.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of links"
             }
           }
         ]
@@ -148,8 +164,11 @@
   },
   "active": "f3eca4fd5b92b2c0",
   "lastOpenFiles": [
-    "project-management/6-Constraint-Project-Management-Star.jpg",
+    "fashion-history/links.md",
+    "art/links.md",
     "texas-history/historic-downtowns.md",
+    "notary-things/links.md",
+    "project-management/6-Constraint-Project-Management-Star.jpg",
     "stay-ready/links.md",
     "getting-outdoors/links.md",
     "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
@@ -165,16 +184,13 @@
     "poetry/links.md",
     "technical-writing/all-about-sops.md",
     "technical-writing/links.md",
-    "art/links.md",
     "project-management/agile-vs-waterfall.png",
     "fashion-history/zelda-wynn-valdes.md",
     "fashion-history/mae-west-in-valdes-dress.jpg",
     "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
     "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",
     "fashion-history/valdes-draping-dress-1.jpg",
-    "fashion-history/links.md",
     "texas-history/links.md",
-    "notary-things/links.md",
     "music/links.md",
     "gardening/links.md",
     "books/links.md",
