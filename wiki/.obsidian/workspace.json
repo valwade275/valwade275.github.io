@@ -13,7 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "art/links.md",
+=======
+<<<<<<< HEAD
+                "file": "games/mtg.md",
+=======
+                "file": "notary-things/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
+>>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
                 "mode": "source",
                 "source": false
               },
@@ -93,7 +101,15 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "art/links.md",
+=======
+<<<<<<< HEAD
+                "file": "games/mtg.md",
+=======
+                "file": "notary-things/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
+>>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +128,15 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "art/links.md",
+=======
+<<<<<<< HEAD
+                "file": "games/mtg.md",
+=======
+                "file": "notary-things/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
+>>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -139,10 +163,19 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "art/links.md"
               },
               "icon": "lucide-list",
               "title": "Outline of links"
+=======
+<<<<<<< HEAD
+                "file": "games/mtg.md"
+=======
+                "file": "notary-things/links.md"
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
+              }
+>>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
             }
           }
         ]
@@ -164,8 +197,17 @@
   },
   "active": "f3eca4fd5b92b2c0",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "fashion-history/links.md",
     "art/links.md",
+=======
+<<<<<<< HEAD
+    "games/dnd.md",
+    "mythologies/links.md",
+    "games/mtg.md",
+=======
+    "project-management/6-Constraint-Project-Management-Star.jpg",
+>>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
     "texas-history/historic-downtowns.md",
     "notary-things/links.md",
     "project-management/6-Constraint-Project-Management-Star.jpg",
@@ -176,6 +218,7 @@
     "games/mtg.md",
     "games/dnd.md",
     "mythologies/links.md",
+>>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
     "games/index.html",
     "games",
     "New folder",
