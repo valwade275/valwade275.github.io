@@ -1,61 +1,65 @@
 {
   "main": {
-    "id": "b24447072672c798",
+    "id": "4823d40db586d7ab",
     "type": "split",
     "children": [
       {
-        "id": "c386f5a4cd4c6498",
+        "id": "1e4d44ac9d682310",
         "type": "tabs",
         "children": [
           {
-            "id": "f3eca4fd5b92b2c0",
+            "id": "8d19801a4d29cfef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-<<<<<<< HEAD
-                "file": "art/links.md",
-=======
-<<<<<<< HEAD
-                "file": "games/mtg.md",
-=======
-                "file": "notary-things/links.md",
->>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
->>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.8.7"
               },
-              "icon": "lucide-file",
-              "title": "links"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
+            }
+          },
+          {
+            "id": "4b97a89125d1a65a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "technical-writing/Tips-for-accessible-content.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Tips-for-accessible-content"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "18dfef49332a6916",
+    "id": "03a9f0251270dc1a",
     "type": "split",
     "children": [
       {
-        "id": "1e3a4bd2ff1cde08",
+        "id": "14ae7c8742f12cc6",
         "type": "tabs",
         "children": [
           {
-            "id": "c19626433a603414",
+            "id": "42f3d640954f47b5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "41bcf2c200f64067",
+            "id": "a80b07681ea3e3a7",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,7 +76,7 @@
             }
           },
           {
-            "id": "713364c1374d3022",
+            "id": "748eac24ede1c4ca",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -88,28 +92,19 @@
     "width": 300
   },
   "right": {
-    "id": "7534ad40bd14d2ef",
+    "id": "054d2fa307295fd6",
     "type": "split",
     "children": [
       {
-        "id": "05b089211eda578f",
+        "id": "827afdc8ba61dfb5",
         "type": "tabs",
         "children": [
           {
-            "id": "daadc7436f3217cd",
+            "id": "0f13b17267f6f9e8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "art/links.md",
-=======
-<<<<<<< HEAD
-                "file": "games/mtg.md",
-=======
-                "file": "notary-things/links.md",
->>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
->>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,33 +114,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for links"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "8466ace5c45061ec",
+            "id": "e4b78539160c25d0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "art/links.md",
-=======
-<<<<<<< HEAD
-                "file": "games/mtg.md",
-=======
-                "file": "notary-things/links.md",
->>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
->>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from links"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "74cf99eb2bfbad01",
+            "id": "df5008af22574566",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -158,24 +144,13 @@
             }
           },
           {
-            "id": "417db94a016456d1",
+            "id": "918c54e00e53da54",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-<<<<<<< HEAD
-                "file": "art/links.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of links"
-=======
-<<<<<<< HEAD
-                "file": "games/mtg.md"
-=======
-                "file": "notary-things/links.md"
->>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
-              }
->>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
+              "title": "Outline"
             }
           }
         ]
@@ -195,50 +170,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f3eca4fd5b92b2c0",
+  "active": "4b97a89125d1a65a",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "fashion-history/links.md",
-    "art/links.md",
-=======
-<<<<<<< HEAD
-    "games/dnd.md",
-    "mythologies/links.md",
-    "games/mtg.md",
-=======
-    "project-management/6-Constraint-Project-Management-Star.jpg",
->>>>>>> f32c81b5c0ef1b18694a61f466e74e73725e52a0
-    "texas-history/historic-downtowns.md",
-    "notary-things/links.md",
-    "project-management/6-Constraint-Project-Management-Star.jpg",
-    "stay-ready/links.md",
-    "getting-outdoors/links.md",
-    "fashion-history/eartha-kitt-in-valdes-dress-1.jpg",
-    "fashion-history/19th-century.md",
-    "games/mtg.md",
-    "games/dnd.md",
-    "mythologies/links.md",
->>>>>>> ca7c3ea1fdecca2d29b4184a734f6d5ae8fd9106
-    "games/index.html",
-    "games",
-    "New folder",
-    "animals/links.md",
-    "project-management/links.md",
-    "poetry/links.md",
-    "technical-writing/all-about-sops.md",
     "technical-writing/links.md",
-    "project-management/agile-vs-waterfall.png",
-    "fashion-history/zelda-wynn-valdes.md",
-    "fashion-history/mae-west-in-valdes-dress.jpg",
-    "fashion-history/joyce-bryant-in-valdes-dress-2.jpg",
-    "fashion-history/joyce-bryant-in-valdes-dress-1.jpg",
-    "fashion-history/valdes-draping-dress-1.jpg",
-    "texas-history/links.md",
-    "music/links.md",
-    "gardening/links.md",
-    "books/links.md",
-    "exercise/links.md",
-    "exercise/classical-pilates-mat-exercises.jpg",
-    "technical-writing/Tips-for-accessible-content.pdf"
+    "technical-writing/all-about-sops.md"
   ]
 }
