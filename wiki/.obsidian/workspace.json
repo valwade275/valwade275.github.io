@@ -11,28 +11,17 @@
             "id": "8d19801a4d29cfef",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.7"
+                "file": "music/links.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
-            }
-          },
-          {
-            "id": "4b97a89125d1a65a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "technical-writing/Tips-for-accessible-content.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Tips-for-accessible-content"
+              "icon": "lucide-file",
+              "title": "links"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,8 +159,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b97a89125d1a65a",
+  "active": "8d19801a4d29cfef",
   "lastOpenFiles": [
+    "games/mtg.md",
+    "games/dnd.md",
+    "fashion-history/mae-west-in-valdes-dress.jpg",
+    "fashion-history/links.md",
+    "texas-history/historic-downtowns.md",
+    "texas-history/links.md",
+    "New shortcut.lnk",
+    "technical-writing/Tips-for-accessible-content.pdf",
     "technical-writing/links.md",
     "technical-writing/all-about-sops.md"
   ]
