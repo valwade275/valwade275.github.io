@@ -1,0 +1,35 @@
+# Block AI-related bots
+User-agent: GPTBot
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Bytespider
+User-agent: FacebookBot
+User-agent: facebookexternalhit
+User-agent: LinkedInBot
+User-agent: ia_archiver
+User-agent: AhrefsBot
+User-agent: archive.org_bot
+User-agent: DataForSeoBot
+User-agent: Yandex
+User-agent: Sogou
+User-agent: Baiduspider
+User-agent: DotBot
+User-agent: MJ12bot
+User-agent: SemrushBot
+User-agent: SEOkicks
+User-agent: PetalBot
+User-agent: trendictionbot
+Disallow: /
+
+# Block Google-related bot extensions
+User-agent: Google-Extended
+# User-agent: Google* Not sure if this will mess up Google Analytics
+Disallow: /
+
+# General block for all bots in sensitive directories
+User-agent: *
+Disallow: /private/
+Disallow: /drafts/
+Crawl-delay: 10
