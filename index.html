@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my GitHub Homepage">
-    <title>Val's Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #301934;
-        }
-        header {
-            background: #301934;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 2rem auto;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        main h2 {
-            text-align: center;
-        }
-        main h3 {
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #301934;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        a {
-            color: #301934;
-        }
-        a:hover {
-            color: #555;
-        }
-        .link-list {
-            list-style: none;
-            padding: 0;
-        }
-        .link-list li {
-            margin-bottom: 1rem;
-        }
-        .link-list li::before {
-            content: "🔗";
-            margin-right: 0.5rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Welcome to my GitHub Homepage"/>
+  <title>Val's Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #301934;
+    }
+    header {
+      background: #301934;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    main h2,
+    main h3 {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #301934;
+      color: #fff;
+      width: 100%;
+    }
+    a {
+    color: #5e2ca5;
+    text-decoration: underline;
+    font-weight: 500;
+    }
+
+    a:hover {
+    color: #3a1876;
+    text-decoration: underline;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+    }
+    .link-list li {
+      margin-bottom: 1rem;
+    }
+    .link-list li::before {
+      content: "🔗";
+      margin-right: 0.5rem;
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .project-box {
+      border: 2px solid #301934;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fafafa;
+      transition: background-color 0.3s ease;
+    }
+    .project-box:hover {
+      background-color: #f0eafc;
+    }
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .project-desc {
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Homepage</h1>
-        <!--<h3>Note: This site is in progress!</h3>-->
-    </header>
-    <main>
-        <h2>Hi, I'm Valerie Wade 👋</h2>
-        <h3>I'm an enthusiastic technical writer and project manager based in Houston, Texas.</h3>
-        <ul class="link-list">
-            <li>
-                I'm building my <a href="https://valwade275.github.io/wiki/">digital garden 🌱</a> here on GitHub. It is an ever-growing collection of ideas and notes on various topics.
-            </li>
-            <li>
-                Want to learn more about digital gardens? Read <a href="https://maggieappleton.com/garden-history">Maggie Appleton's essay</a>.
-            </li>
-            <li>
-                If you would like to learn more about my professional background, visit <a href="https://www.vcwade.com">my website</a>.
-            </li>
-            <li>
-                To see me tinker and play with code, visit <a href="https://github.com/valwade275">my GitHub profile</a>.
-            </li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 Valerie Wade. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Welcome to My GitHub Homepage</h1>
+  </header>
+
+  <main>
+    <h2>Hi, I'm Valerie Wade 👋</h2>
+    <h3>I'm an enthusiastic technical writer and project manager based in Houston, Texas.</h3>
+    <div style="text-align: center;">
+    <p>
+        If you would like to learn more about my professional background, visit <a href="https://www.vcwade.com">my website</a>.
+    </p>
+    </div>
+    
+
+    <section class="projects">
+      <div class="project-box">
+        <div class="project-title">🌱 Project 1: Digital Garden</div>
+        <div class="project-desc">An evolving collection of notes, essays, and references. Think of it as my ever-growing personal wiki.</div>
+        <p>Want to learn more about digital gardens? Read <a href="https://maggieappleton.com/garden-history">Maggie Appleton's essay</a>.</p>
+        <a href="https://valwade275.github.io/wiki/">Explore the Garden →</a>
+      </div>
+
+      <div class="project-box">
+        <div class="project-title">🌤️ Project 2: Weather App</div>
+        <div class="project-desc">A live weather dashboard built with HTML, CSS, and JavaScript that fetches real-time weather data.</div>
+        <a href="https://valwade275.github.io/weather-api-demo/">Check Houston's Weather →</a>
+      </div>
+
+      <div class="project-box">
+        <div class="project-title">🛠️ Project 3: Coming Soon</div>
+        <div class="project-desc">Another experiment is in the works—stay tuned for updates!</div>
+        <span style="opacity: 0.6;">Work in progress</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024-2025 Valerie Wade. All rights reserved.</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.icons8.com/?size=45&id=yLuI6PMA_a0O&format=png&color=000000" alt="License"/></a>
+    <a href="https://vcwade.com/"><img src="https://img.icons8.com/bubbles/50/000000/web.png" alt="Website"/></a>
+	<a href="mailto:valwade275@gmail.com"><img src="https://img.icons8.com/bubbles/50/000000/gmail.png" alt="Gmail"/></a>
+	<a href="https://linkedin.com/in/vcwade"><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png" alt="LinkedIn"/></a>
+    <a href="https://valwade275.github.io/"><img src="https://img.icons8.com/bubbles/50/000000/github.png" alt="GitHub"/></a>
+  </footer>
 </body>
 </html>
